@@ -203,7 +203,7 @@ ax.set_ylabel("Moves Learned", fontsize=14)
 plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
 
 fig = ax.get_figure()
-fig.savefig('Exploration Rate - Moves.jpg', format='jpeg', dpi=200, bbox_inches='tight')
+fig.savefig('tictactoe_graphs/Exploration Rate - Moves.jpg', format='jpeg', dpi=200, bbox_inches='tight')
 plt.show()
 
 # In[13]:
@@ -227,7 +227,7 @@ ax[3][0].set_xlabel("Epochs", fontsize=14)
 ax[3][1].set_xlabel("Epochs", fontsize=14)
 
 plt.show()
-fig.savefig('Exploration Rate - Wins.jpg', format='jpeg', dpi=200, bbox_inches='tight')
+fig.savefig('tictactoe_graphs/Exploration Rate - Wins.jpg', format='jpeg', dpi=200, bbox_inches='tight')
 
 # #### Testing the learn rate
 
@@ -250,7 +250,7 @@ ax.set_ylabel("Moves Learned", fontsize=14)
 plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
 
 fig = ax.get_figure()
-fig.savefig('Learn Rate - Moves.jpg', format='jpeg', dpi=200, bbox_inches='tight')
+fig.savefig('tictactoe_graphs/Learn Rate - Moves.jpg', format='jpeg', dpi=200, bbox_inches='tight')
 plt.show()
 
 # In[16]:
@@ -274,7 +274,7 @@ ax[3][0].set_xlabel("Epochs", fontsize=14)
 ax[3][1].set_xlabel("Epochs", fontsize=14)
 
 plt.show()
-fig.savefig('Learn Rate - Wins.jpg', format='jpeg', dpi=200, bbox_inches='tight')
+fig.savefig('tictactoe_graphs/Learn Rate - Wins.jpg', format='jpeg', dpi=200, bbox_inches='tight')
 
 # #### Testing the discount factor
 
@@ -297,7 +297,7 @@ ax.set_ylabel("Moves Learned", fontsize=14)
 plt.legend(fancybox=True, framealpha=1, shadow=True, borderpad=1)
 
 fig = ax.get_figure()
-fig.savefig('Discount Rate - Moves.jpg', format='jpeg', dpi=200, bbox_inches='tight')
+fig.savefig('tictactoe_graphs/Discount Rate - Moves.jpg', format='jpeg', dpi=200, bbox_inches='tight')
 plt.show()
 
 # In[19]:
@@ -321,7 +321,7 @@ ax[3][0].set_xlabel("Epochs", fontsize=14)
 ax[3][1].set_xlabel("Epochs", fontsize=14)
 
 plt.show()
-fig.savefig('Discount Factor - Wins.jpg', format='jpeg', dpi=200, bbox_inches='tight')
+fig.savefig('tictactoe_graphs/Discount Factor - Wins.jpg', format='jpeg', dpi=200, bbox_inches='tight')
 
 # From these results we can see that higher exploration rates and lower learn rates are prefered for the model. The
 # discount factor appears to have little impact on the accuracy of the model however, higher values marginally improve
