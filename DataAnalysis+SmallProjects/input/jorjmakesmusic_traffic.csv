@@ -1,0 +1,493 @@
+Traffic Day,Traffic New or Returning Visitor,Traffic Referring Category Ø,Traffic Referring Site Ø,Traffic Referring URL,Traffic UTM Campaign Name Ø,Traffic UTM Campaign Medium Ø,Traffic UTM Campaign Source Ø,Traffic Page Path Ø,Traffic Page URL,Traffic Country,Traffic Region,Traffic City,Traffic Device Type,Traffic Browser,Traffic Browser Version,Traffic Operating System,Traffic Is the First Page Viewed Ø (Yes / No),Traffic Is the Last Page Viewed Ø (Yes / No),Traffic Next Page Viewed Ø,Traffic Previous Page Viewed Ø,Traffic Page Views,Traffic Site Sessions Ø,Traffic Unique Visitors,Traffic Site Bounce Rate Ø,Traffic Avg. Session Duration Ø,Traffic Avg. Time on Page Ø,Traffic Avg. Pages per Session Ø
+20/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ENG,London,Desktop,Chrome,81.0.4044.138,Windows,Yes,Yes,N/A,N/A,7,1,1,0,0.00380787,0.000272,1
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/early-access,http://jorjmakesmusic.com/early-access,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,Yes,No,/exclusive,N/A,5,1,1,0,0.021354167,0.002581,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,4,2,2,0,0.000752315,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,BNH,Brighton,Mobile,Chrome,268.1.0.54.121,Android,No,Yes,N/A,/,3,2,1,0,0.000787037,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Mobile,Chrome,268.1.0.54.121,Android,Yes,No,/video,N/A,3,2,1,0,0.000787037,6.36E-05,2
+07/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/video,https://jorjmakesmusic.com/video,Germany,BE,Berlin,Desktop,Chrome,83.0.4103.116,Linux,No,No,/news,/maturity,3,1,1,0,0.000497685,5.40E-05,2
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,ENG,London,Mobile,Chrome,81.0.4044.117,Android,No,Yes,N/A,/,3,1,1,0,0.002534722,0.0003796,1
+04/01/2021,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,2,2,2,1,0,0,1
+23/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,Yes,N/A,/maturity,2,1,1,0,0.001805556,0,1
+07/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/exclusive,http://jorjmakesmusic.com/exclusive,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.97,Windows,Yes,Yes,N/A,N/A,2,1,1,0,0.006030093,0,1
+10/12/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/video,https://jorjmakesmusic.com/video,United Kingdom,BNH,Brighton,Desktop,Chrome,87.0.4280.88,Mac OS,No,No,/about,/,2,1,1,0,0.000428241,0.0001155,2
+20/06/2020,Returning Visitor,Wix Email Marketing,N/A,N/A,d5328aae-be6f-4dbc-a1c5-9886f145f202,mail,so,/early-access,http://jorjmakesmusic.com/early-access?utm_campaign=d5328aae-be6f-4dbc-a1c5-9886f145f202&utm_source=so&utm_medium=mail&cid=bc369a5b-9d85-4e14-bbe3-24a3f6a46334,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.106,Windows,Yes,No,/exclusive,N/A,2,1,1,0,0.000949074,5.20E-05,1
+17/11/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/maturity,https://jorjmakesmusic.com/maturity,United Kingdom,BNH,Brighton,Desktop,Chrome,86.0.4240.198,Mac OS,No,No,/video,/,2,1,1,0,0.000613426,0.000185,2
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/maturity,/news,2,1,1,0,0.017731481,2.60E-05,2
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/maturity,https://jorjmakesmusic.com/maturity,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,No,No,/video,/,2,1,1,0,0.000949074,0.000168,2
+01/11/2020,New Visitor,Organic Search,baidu.com,http://baidu.com/,_,_,_,/,https://jorjmakesmusic.com,China,SH,Hongkou,Mobile,Chrome,57.0.2987.108,Android,Yes,Yes,N/A,N/A,2,2,2,1,0,0,1
+02/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Mobile,Chrome,81.0.4044.117,Android,Yes,No,/maturity,N/A,2,1,1,0,0.010740741,0,2
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SWK,Bermondsey,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,2,1,1,0,0.002164352,0,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,Yes,No,/maturity,N/A,2,2,2,0,0.002638889,0.000283667,2
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/,/video,2,1,1,0,0.017731481,0.001261667,2
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/maturity,/news,2,1,1,0,0.010509259,6.08E-05,2
+27/06/2020,New Visitor,Organic Search,bing.com,http://www.bing.com/search?q=amazon,_,_,_,/,http://jorjmakesmusic.com,Canada,ON,Toronto,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,2,2,2,1,0,0,1
+30/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,2,2,2,1,0,0,1
+18/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news/single-2,http://jorjmakesmusic.com/news/single-2,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.106,Windows,No,Yes,N/A,/news,2,1,1,0,0.000902778,0,1
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/early-access,http://jorjmakesmusic.com/early-access,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/exclusive,/exclusive,2,1,1,0,0.021354167,5.80E-05,1
+20/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,ENG,London,Desktop,Chrome,81.0.4044.138,Windows,No,Yes,N/A,/,1,1,1,0,1.16E-05,0,1
+21/05/2020,Returning Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity?fbclid=iwar1odmbd_c2nni8ptdnuu9vzyuhkoa2gzdotpu_pypok0cybmjqxh97vpd0,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+04/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+12/06/2020,New Visitor,Referral,spotifycs--c.eu25.visual.force.com,https://spotifycs--c.eu25.visual.force.com/,_,_,_,/,http://jorjmakesmusic.com,United States,CO,Aurora,Desktop,Chrome,83.0.4103.97,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,WSX,Burgess Hill,Mobile,Safari,139.1.0.39.120,Mac OS,No,Yes,N/A,/video,1,1,1,0,0.000752315,0,1
+08/06/2020,New Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,SRY,Camberley,Mobile,Chrome,83.0.4103.96,Android,No,Yes,N/A,/,1,1,1,0,0.000127315,0,1
+22/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SRY,Camberley,Desktop,Safari,13.1,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,0.001446759,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/contact,/news,1,1,1,0,0.017731481,0.0001735,2
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BKM,Aylesbury,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+03/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ESX,Lewes,Desktop,Chrome,83.0.4103.61,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+24/12/2020,New Visitor,Social,facebook.com,http://facebook.com/,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,NSM,Weston-super-Mare,Mobile,Facebook,300.0.0.57.128,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/12/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,No,/news/it-be-official,/contact,1,1,1,0,0.003703704,0.0001155,1
+14/07/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,https://jorjmakesmusic.com/news,United Kingdom,LEW,New Cross,Desktop,Chrome,83.0.4103.116,Windows,No,No,/,/,1,1,1,0,0.013125,0.012951,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2me5ht8nvy7vy8ecfwdjs_9-u8xof-rzd0cysapkeldrwb0sekpbxrobs,United Kingdom,SRY,Camberley,Mobile,Chrome,81.0.4044.117,Android,Yes,No,/contact,N/A,1,1,1,0,0.004293981,0.000108,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HRT,St Albans,Mobile,Safari,140.0.0.25.126,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+21/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,N/A,N/A,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+30/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,79.0.3945.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,NGM,Nottingham,Desktop,Chrome,81.0.4044.129,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,RDB,Ilford,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,No,Yes,N/A,/video,1,1,1,0,0.000949074,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,Yes,N/A,/news,1,1,1,0,0.000821759,0,1
+09/07/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,MRT,Raynes Park,Desktop,Chrome,83.0.4103.116,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+25/12/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,CA,N/A,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+20/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,N/A,N/A,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+20/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,TX,Richardson,Desktop,Chrome,80.0.3987.149,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,KEN,Ashford,Desktop,Chrome,81.0.4044.129,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,0.000416667,0,1
+08/07/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,https://jorjmakesmusic.com/?fbclid=iwar35id1-_u6jfklfsngs_5guz4m24p9nqtk0ixipefa6-dn2y5c2u5on51a,United Kingdom,GLS,Bourton on the Water,Desktop,Chrome,83.0.4103.116,Windows,Yes,No,/video,N/A,1,1,1,0,0.000219907,0.00022,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,ESX,Eastbourne,Mobile,Safari,13.0.5,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000150463,0,1
+10/12/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,https://jorjmakesmusic.com/about,United Kingdom,BNH,Brighton,Desktop,Chrome,87.0.4280.88,Mac OS,No,Yes,N/A,/video,1,1,1,0,0.000428241,0,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar09mhgqwoh4lt6hih6bsqhci1k1sneijfig8tj9kof8-3l2pwi1j_vdvko,United Kingdom,ESX,Eastbourne,Mobile,Safari,13.0.5,Mac OS,Yes,No,/news,N/A,1,1,1,0,0.000150463,5.00E-05,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/about,/video,1,1,1,0,0.017731481,4.65E-05,2
+16/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar0mfa2cyv-ct2heeqdjzl4wtf6mtkflxmuomsgkmzxqdj6ijzmf0h7uzai,United Kingdom,WSX,Lancing,Desktop,Chrome,83.0.4103.97,Windows,Yes,No,/news,N/A,1,1,1,0,0.000914352,0.000204333,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar1lemp05mb-6tph5_se30wfozqwqahi_thnroyhmx9lxyvjym7et71_gzc,United Kingdom,HAV,Romford,Desktop,Chrome,81.0.4044.129,Windows,Yes,No,/video,N/A,1,1,1,0,0.000462963,8.10E-05,2
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/about,/contact,1,1,1,0,0.017731481,0.002251,2
+20/05/2020,Returning Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity?fbclid=iwar0lmtui5pyjwkdg3wh4svurnwbqwh_hg8qqgoffb9tphn__duns-ppk-0e,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+11/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,New Cross,Desktop,Chrome,83.0.4103.97,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ISL,Islington,Mobile,Chrome,273.0.0.39.123,Android,Yes,No,/news,N/A,1,1,1,0,0.000196759,3.10E-05,1
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,BNH,Brighton,Desktop,Chrome,81.0.4044.122,Windows,No,No,/video,/,1,1,1,0,0.001423611,0.000602,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,N/A,N/A,Mobile,Safari,139.1.0.39.120,Mac OS,Yes,No,/about,N/A,1,1,1,0,0.000115741,3.87E-05,2
+27/08/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,CA,N/A,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+19/11/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,MN,Faribault,Desktop,Chrome,79.0.3945.79,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/exclusive,http://jorjmakesmusic.com/exclusive,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/maturity,/early-access,1,1,1,0,0.021354167,9.30E-05,1
+07/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/about,https://jorjmakesmusic.com/about,Germany,BE,Berlin,Desktop,Chrome,83.0.4103.116,Linux,No,Yes,N/A,/news,1,1,1,0,0.000497685,0,1
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,WSX,Burgess Hill,Mobile,Safari,262.1.0.71.117,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,0.012962963,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HAV,Romford,Desktop,Chrome,81.0.4044.129,Windows,No,No,/about,/maturity,1,1,1,0,0.000462963,5.20E-05,2
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/exclusive,http://jorjmakesmusic.com/exclusive,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,Yes,No,/,N/A,1,1,1,0,0.010509259,0.0050465,1
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,Yes,N/A,/video,1,1,1,0,0.010509259,0,1
+07/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,No,No,/news,/,1,1,1,0,0.0009375,0.000278,1
+25/12/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,N/A,N/A,Desktop,Chrome,78.0.3904.70,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/,/about,1,1,1,0,0.017731481,0.0003415,2
+06/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,No,No,/maturity,/,1,1,1,0,0.001203704,0.000324,2
+08/07/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/video,https://jorjmakesmusic.com/video,United Kingdom,GLS,Bourton on the Water,Desktop,Chrome,83.0.4103.116,Windows,No,Yes,N/A,/,1,1,1,0,0.000219907,0,1
+18/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,MRT,Raynes Park,Desktop,Safari,13.1.1,Mac OS,No,No,/news,/,1,1,1,0,0.000844907,0.0002895,1
+20/06/2020,Returning Visitor,Wix Email Marketing,N/A,N/A,d5328aae-be6f-4dbc-a1c5-9886f145f202,mail,so,/exclusive,http://jorjmakesmusic.com/exclusive?utm_campaign=d5328aae-be6f-4dbc-a1c5-9886f145f202&utm_source=so&utm_medium=mail&cid=bc369a5b-9d85-4e14-bbe3-24a3f6a46334,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.106,Windows,No,Yes,N/A,/early-access,1,1,1,0,0.000949074,0,1
+02/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,No,Yes,N/A,/news/it's-here,1,1,1,0,0.001956019,0,1
+07/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/,https://jorjmakesmusic.com,Germany,BE,Berlin,Desktop,Chrome,83.0.4103.116,Linux,Yes,No,/maturity,N/A,1,1,1,0,0.000497685,0.000139,1
+06/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar21fggg2e1f4pmke6h-zwzwrksv8jlc63ze-lfrx1axyqstevz8-sq_oua,United Kingdom,HRY,Wood Green,Mobile,Safari,13.0.5,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+17/11/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,https://jorjmakesmusic.com/?fbclid=iwar2wr6ttwbvvve6sjinh6japb6tv-dhyk6zonmytstrt0378nj-uiskp1zq,United Kingdom,BNH,Brighton,Desktop,Chrome,86.0.4240.198,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.000613426,0.000243,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,BNH,Brighton,Desktop,Safari,13.1,Mac OS,No,No,/about,/,1,1,1,0,0.000520833,8.70E-05,2
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,Spain,M,Madrid,Desktop,Chrome,81.0.4044.129,Windows,No,No,/maturity,/,1,1,1,0,0.00125,0.0001445,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,No,/,/,1,1,1,0,0.001585648,5.80E-05,1
+30/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/early-access,http://jorjmakesmusic.com/early-access,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Tablet,Safari,N/A,iOS,No,Yes,N/A,/about,1,1,1,0,0.005833333,0,1
+07/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,GLG,Glasgow,Desktop,Safari,13.1,Mac OS,No,Yes,N/A,/,1,1,1,0,3.47E-05,0,1
+04/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,Yes,No,/maturity,N/A,1,1,1,0,0.000162037,5.40E-05,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/news/it-be-official,http://jorjmakesmusic.com/news/it-be-official,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,No,/contact,/news,1,1,1,0,0.003703704,4.05E-05,2
+24/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,Israel,HA,Haifa,Desktop,Chrome,81.0.4044.138,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+15/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar01mxguu03y_hqm-lzir5-6_tua0f05z8y5l43hythusjwoiwtbydiu89e,United Kingdom,BNH,Brighton,Desktop,Chrome,83.0.4103.61,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/news,/,1,1,1,0,0.017731481,5.80E-05,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SRY,Camberley,Mobile,Chrome,81.0.4044.117,Android,No,No,/video,/about,1,1,1,0,0.004293981,0.0001505,2
+26/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,MN,Faribault,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+30/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,N/A,N/A,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+22/12/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,Switzerland,ZH,Zurich,Mobile,Chrome,70.0.3538.64,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,No,/news,/news,1,1,1,0,0.000821759,1.75E-05,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/video,/,1,1,1,0,0.017731481,0.000266,2
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,KEN,Folkestone,Mobile,Safari,N/A,Mac OS,No,Yes,N/A,/about,1,1,1,0,0.000578704,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HCK,Hackney,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,No,No,/maturity,/about,1,1,1,0,0.0009375,0.00011,2
+02/06/2020,New Visitor,Wix Email Marketing,N/A,N/A,f77045bc-747d-4f40-96e4-d24dcdc34079,mail,so,/early-access,http://jorjmakesmusic.com/early-access?utm_campaign=f77045bc-747d-4f40-96e4-d24dcdc34079&utm_source=so&utm_medium=mail&cid=5583f5c0-2ecb-43e2-96b1-f32a12d6fc7b,United Kingdom,BNH,Brighton,Desktop,Edge,83.0.478,Windows,No,Yes,N/A,/exclusive,1,1,1,0,0.00125,0.000197,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BAS,Radstock,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+19/09/2020,New Visitor,Social,youtube.com,https://youtube.com/,_,_,_,/maturity,https://jorjmakesmusic.com/maturity,Italy,BO,Bologna,Desktop,Chrome,85.0.4183.102,Windows,No,Yes,N/A,/,1,1,1,0,0.000150463,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar14ehmd-dqjjcm28hiziwgtom1lks0zbw8q_npzay9gugbva4h8gw8ouai,Spain,M,Madrid,Desktop,Chrome,81.0.4044.129,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+21/05/2020,Returning Visitor,Social,youtube.com,https://www.youtube.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/video,/,1,1,1,0,0.000532407,0.0002255,2
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BKM,High Wycombe,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+15/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Desktop,Safari,13.1,Mac OS,Yes,No,/about,N/A,1,1,1,0,3.47E-05,1.17E-05,2
+06/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,No,Yes,N/A,/about,1,1,1,0,0.001203704,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HAM,Farnborough,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+11/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HRW,Pinner,Mobile,Safari,N/A,Mac OS,Yes,No,/contact,N/A,1,1,1,0,0.000810185,0.00027,2
+15/11/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,No,/news,/about,1,1,1,0,0.003703704,0.0011575,1
+07/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,Yes,No,/about,N/A,1,1,1,0,0.0009375,5.40E-05,2
+09/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,KEN,Folkestone,Mobile,Safari,261.1.0.57.120,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000173611,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,No,/news,/maturity,1,1,1,0,0.000821759,4.05E-05,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ENG,London,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BEN,Wembley,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,WSX,Burgess Hill,Mobile,Safari,139.1.0.39.120,Mac OS,No,No,/about,/,1,1,1,0,0.000752315,1.75E-05,2
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar0xnoeakngquopv0znfombwaxfpqhtgdz9oufgs1qtochdsgpq6ljcmwa0,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.001261574,0.000181333,2
+18/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.106,Windows,Yes,No,/news,N/A,1,1,1,0,0.000902778,7.67E-06,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,N/A,N/A,Mobile,Safari,139.1.0.39.120,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000115741,0,1
+26/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Desktop,Chrome,81.0.4044.122,Windows,No,Yes,N/A,/news,1,1,1,0,0.001423611,0,1
+06/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,ISL,Islington,Mobile,Chrome,273.0.0.39.123,Android,No,No,/about,/,1,1,1,0,0.000196759,5.20E-05,2
+02/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,No,No,/news/it's-here,/,1,1,1,0,0.001956019,2.30E-05,1
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,No,Yes,N/A,/about,1,1,1,0,0.001261574,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/news,http://jorjmakesmusic.com/news,Sweden,O,Askim,Mobile,Safari,N/A,Mac OS,No,Yes,N/A,/video,1,1,1,0,0.000763889,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/,/,1,1,1,0,0.017731481,0.006111,1
+21/06/2020,New Visitor,Wix Email Marketing,N/A,N/A,d5328aae-be6f-4dbc-a1c5-9886f145f202,mail,so,/early-access,http://jorjmakesmusic.com/early-access?utm_campaign=d5328aae-be6f-4dbc-a1c5-9886f145f202&utm_source=so&utm_medium=mail&cid=97b04e42-069d-4386-94c5-8ed2bf3e6f6d,United Kingdom,LEW,New Cross,Mobile,Safari,13.1,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SRY,Camberley,Mobile,Chrome,81.0.4044.117,Android,No,No,/about,/contact,1,1,1,0,0.004293981,6.95E-05,2
+07/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,GLG,Glasgow,Tablet,Safari,N/A,iOS,No,No,/about,/,1,1,1,0,0.005833333,0.0005555,2
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar14ehmd-dqjjcm28hiziwgtom1lks0zbw8q_npzay9gugbva4h8gw8ouai,Spain,M,Madrid,Desktop,Chrome,81.0.4044.129,Windows,Yes,No,/video,N/A,1,1,1,0,0.00125,0.000285333,2
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,BNH,Brighton,Desktop,Chrome,81.0.4044.122,Windows,No,No,/,/video,1,1,1,0,0.001423611,1.75E-05,2
+22/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,SRY,Camberley,Desktop,Safari,13.1,Mac OS,No,No,/,/,1,1,1,0,0.001446759,0.000648,2
+01/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,ESS,Wivenhoe,Mobile,Chrome,239.1.0.17.119,Android,No,No,/,/,1,1,1,0,0.000509259,1.75E-05,2
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,No,No,/contact,/news,1,1,1,0,0.001261574,0.00011,2
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/about,https://jorjmakesmusic.com/about,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,No,Yes,N/A,/,1,1,1,0,0.000520833,0,1
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,WSX,Burgess Hill,Mobile,Safari,262.1.0.71.117,Mac OS,No,No,/about,/,1,1,1,0,0.012962963,0.006383,2
+06/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,ISL,Islington,Mobile,Chrome,273.0.0.39.123,Android,No,Yes,N/A,/news,1,1,1,0,0.000196759,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,No,/about,/,1,1,1,0,0.003703704,7.50E-05,2
+29/12/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,CA,N/A,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/06/2020,New Visitor,Wix Email Marketing,N/A,N/A,f77045bc-747d-4f40-96e4-d24dcdc34079,mail,so,/exclusive,http://jorjmakesmusic.com/exclusive?utm_campaign=f77045bc-747d-4f40-96e4-d24dcdc34079&utm_source=so&utm_medium=mail&cid=5583f5c0-2ecb-43e2-96b1-f32a12d6fc7b,United Kingdom,BNH,Brighton,Desktop,Edge,83.0.478,Windows,Yes,No,/early-access,N/A,1,1,1,0,0.00125,0.00125,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/contact,/maturity,1,1,1,0,0.017731481,0.0001215,2
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,WSX,Burgess Hill,Mobile,Safari,262.1.0.71.117,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.012962963,6.57E-05,2
+16/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,WSX,Lancing,Desktop,Chrome,83.0.4103.97,Windows,No,No,/about,/,1,1,1,0,0.000914352,0.0001505,2
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,ESX,Battle,Mobile,Chrome,273.0.0.39.123,Android,No,Yes,N/A,/,1,1,1,0,0.000115741,0,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2jxkfgydotwbidb4mfbqoih-qkppg-guz3weppfnskik5eeu50wtj8hkc,United Kingdom,ENG,London,Mobile,Chrome,81.0.4044.117,Android,Yes,No,/video,N/A,1,1,1,0,0.002534722,0.000212333,2
+07/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Tablet,Safari,N/A,iOS,Yes,No,/maturity,N/A,1,1,1,0,0.005833333,0.001257667,2
+17/11/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/video,https://jorjmakesmusic.com/video,United Kingdom,BNH,Brighton,Desktop,Chrome,86.0.4240.198,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,0.000613426,0,1
+21/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,BNH,Brighton,Mobile,Safari,264.0.0.63.117,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+19/06/2020,New Visitor,Social,facebook.com,http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.jorjmakesmusic.com%2F&h=AT2IdLT5vWDduxqTP1QmJeKkEXPCoL-U2ZK6iOgg8ZgQr8AlTR7d0rNYVUnwgs_7LB-fqdR6I_e17bjsPNsTAJ3zZnvJ1CpFK6kj0SWneN3rb694GIFCoH79Jt7M6Q,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Mobile,Safari,274.0.0.57.114,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+20/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,WSX,Burgess Hill,Mobile,Safari,264.0.0.63.117,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+30/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BRY,Beckenham,Tablet,Safari,N/A,iOS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,No,/about,/video,1,1,1,0,0.000821759,1.75E-05,2
+07/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,WSX,Cowfold,Desktop,Chrome,81.0.4044.122,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,Yes,No,/about,N/A,1,1,1,0,0.000520833,0.000521,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/video,/contact,1,1,1,0,0.017731481,2.90E-05,2
+16/09/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ESS,Colchester,Mobile,Chrome,268.1.0.54.121,Android,No,No,/video,/,1,1,1,0,0.000740741,0.0001275,2
+11/09/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+10/12/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,https://jorjmakesmusic.com/?fbclid=iwar1xw7jwa--xplgzuytmz4pxkmbs8veiam35e4vlbahoajbg2miwjwjhfvs,United Kingdom,BNH,Brighton,Desktop,Chrome,87.0.4280.88,Mac OS,Yes,No,/video,N/A,1,1,1,0,0.000428241,0.000197,1
+01/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,STN,Carshalton,Desktop,Safari,13.1,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,3.47E-05,3.50E-05,1
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,BNH,Brighton,Desktop,Chrome,81.0.4044.122,Windows,No,No,/news,/maturity,1,1,1,0,0.001423611,2.90E-05,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ESS,Colchester,Mobile,Chrome,268.1.0.54.121,Android,Yes,No,/maturity,N/A,1,1,1,0,0.000740741,0.000127333,2
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,Sweden,O,Askim,Mobile,Safari,N/A,Mac OS,No,No,/video,/,1,1,1,0,0.000763889,6.35E-05,2
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2x1pc2axa43vlrp1risfsjzkhkzddvmefswgwverbo_kbzkbth-5zfyck,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.000821759,0.000173667,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,No,/contact,/maturity,1,1,1,0,0.003703704,0.000376,2
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,SRY,Camberley,Mobile,Chrome,81.0.4044.117,Android,No,No,/,/,1,1,1,0,0.004293981,0.0011515,2
+07/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/news,https://jorjmakesmusic.com/news,Germany,BE,Berlin,Desktop,Chrome,83.0.4103.116,Linux,No,No,/about,/video,1,1,1,0,0.000497685,0.000127,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,SRY,Camberley,Mobile,Chrome,81.0.4044.117,Android,No,No,/,/,1,1,1,0,0.004293981,0.0006135,2
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,WSX,Cuckfield,Desktop,Chrome,81.0.4044.129,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000497685,0,1
+20/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,HRW,Pinner,Desktop,Chrome,81.0.4044.138,Windows,No,Yes,N/A,/maturity,1,1,1,0,0.001076389,0,1
+14/07/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,LEW,New Cross,Desktop,Chrome,83.0.4103.116,Windows,No,Yes,N/A,/news,1,1,1,0,0.013125,0,1
+01/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity?fbclid=iwar1odmbd_c2nni8ptdnuu9vzyuhkoa2gzdotpu_pypok0cybmjqxh97vpd0,United Kingdom,STN,Carshalton,Desktop,Safari,13.1,Mac OS,No,Yes,N/A,/,1,1,1,0,3.47E-05,0,1
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/exclusive,http://jorjmakesmusic.com/exclusive,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/early-access,/early-access,1,1,1,0,0.021354167,0.000498,1
+16/11/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,79.0.3945.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,SRY,Camberley,Mobile,Chrome,81.0.4044.117,Android,No,Yes,N/A,/,1,1,1,0,0.004293981,0,1
+18/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.106,Windows,No,No,/news/single-2,/,1,1,1,0,0.000902778,3.45E-05,1
+20/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,CMD,Camden,Mobile,Safari,263.2.0.81.121,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Social,instagram.com,https://l.instagram.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SLF,Salford,Mobile,Chrome,139.0.0.33.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,No,/video,/,1,1,1,0,0.000821759,1.75E-05,2
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,NGM,Nottingham,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/video,/,1,1,1,0,0.010509259,2.30E-05,2
+29/08/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,CA,N/A,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/01/2021,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,KEN,Folkestone,Mobile,Safari,N/A,Mac OS,Yes,No,/about,N/A,1,1,1,0,0.000578704,2.70E-05,2
+30/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,Germany,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,GLG,Glasgow,Tablet,Safari,N/A,iOS,No,No,/,/maturity,1,1,1,0,0.005833333,0.000949,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,HAV,Romford,Desktop,Chrome,81.0.4044.129,Windows,No,No,/maturity,/,1,1,1,0,0.000462963,3.45E-05,2
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HRW,Pinner,Mobile,Safari,261.1.0.57.120,Mac OS,Yes,No,/video,N/A,1,1,1,0,0.000474537,0.000158333,2
+13/09/2020,New Visitor,Social,youtube.com,https://youtube.com/,_,_,_,/,https://jorjmakesmusic.com,India,DL,Delhi,Mobile,Chrome,85.0.4183.101,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+22/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar1iwubqlyviocdhbsz1m866qamwmvvoytabz9mltoplz3n-sbg7ucoy93s,United Kingdom,BNH,Brighton,Desktop,Chrome,83.0.4103.106,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ESS,Wivenhoe,Mobile,Chrome,239.1.0.17.119,Android,Yes,No,/video,N/A,1,1,1,0,0.000509259,0.000158333,2
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,France,75,Paris,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,Yes,No,/maturity,N/A,1,1,1,0,0.017731481,0.000154333,2
+05/05/2020,New Visitor,Social,instagram.com,https://l.instagram.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Mobile,Chrome,140.0.0.30.126,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+18/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2_k-exqfydyzj7wye-reiae9qnpwtfirwmpzs2z_kwf2to6hox5uir7_w,United Kingdom,MRT,Raynes Park,Desktop,Safari,13.1.1,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.000844907,4.23E-05,2
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2qi2tf54x0nd2644k5bfazqushllzhcqzh-topxcztbdfhvdrz730h-1m,United Kingdom,ISL,Islington,Desktop,Firefox,76,Windows,Yes,No,/maturity,N/A,1,1,1,0,0.000185185,5.00E-05,2
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Desktop,Chrome,81.0.4044.122,Windows,Yes,No,/maturity,N/A,1,1,1,0,0.001423611,4.23E-05,2
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Mobile,Chrome,81.0.4044.117,Android,Yes,No,/maturity,N/A,1,1,1,0,0.010740741,0.0053705,1
+16/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar3zt8xzhrwhtpiyldkjknswmpwbaahnfpuifc8yq0bgtwjs1gmmd3vqi4c,United Kingdom,BNH,Brighton,Desktop,Safari,13.1,Mac OS,Yes,No,/contact,N/A,1,1,1,0,0.000520833,0.000115667,2
+11/11/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+04/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,No,Yes,N/A,/,1,1,1,0,0.000162037,0,1
+21/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,WSX,Burgess Hill,Mobile,Safari,264.0.0.63.117,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+18/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,MRT,Raynes Park,Desktop,Safari,13.1.1,Mac OS,No,Yes,N/A,/news,1,1,1,0,0.000844907,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2j8icyl8x0yqdpmmd5t2rzgquc0fcdy0_rcbzd7poqyckhe0tky_xn-ma,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,Yes,No,/news,N/A,1,1,1,0,0.000416667,0.000139,1
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar0mq1hhqrquxlowv-5rppn90vmy5uqituyutdc7-6lbxeeo0jtscvkkxws,Poland,30,Poznan,Desktop,Chrome,81.0.4044.129,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,No,No,/news,/maturity,1,1,1,0,0.001261574,4.65E-05,1
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,HRW,Pinner,Mobile,Safari,261.1.0.57.120,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000474537,0,1
+23/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,Yes,No,/,N/A,1,1,1,0,0.001805556,0.000536333,2
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,BNH,Brighton,Desktop,Safari,13.1,Mac OS,No,Yes,N/A,/contact,1,1,1,0,0.000520833,0,1
+06/06/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,ESS,Chelmsford,Desktop,Chrome,83.0.4103.61,Windows,No,No,/news/it's-here,/,1,1,1,0,0.000555556,4.65E-05,1
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar13odshwd7iu1wzsblnebxo2w3o_5kc-wepjvm9kop7ljevzxo8zekmd2m,United Kingdom,KEN,Ashford,Desktop,Chrome,81.0.4044.129,Mac OS,Yes,No,/video,N/A,1,1,1,0,0.000416667,5.40E-05,2
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,WLL,Walsall,Mobile,Chrome,86.0.4240.93,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/news,/maturity,1,1,1,0,0.017731481,2.90E-05,1
+14/07/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,LEW,New Cross,Desktop,Chrome,83.0.4103.116,Windows,Yes,No,/news,N/A,1,1,1,0,0.013125,0.000174,1
+19/09/2020,New Visitor,Social,youtube.com,https://youtube.com/,_,_,_,/,https://jorjmakesmusic.com,Italy,BO,Bologna,Desktop,Chrome,85.0.4183.102,Windows,Yes,No,/maturity,N/A,1,1,1,0,0.000150463,0.00015,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Hove,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,KEN,Folkestone,Mobile,Safari,261.1.0.57.120,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.000173611,5.80E-05,2
+07/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar11nuxmrduyhvyavsfa6lwsoyxg8x5s9gmbddpjwev7exlfibsjwjzvylg,United Kingdom,KEC,Notting Hill Gate,Desktop,Chrome,81.0.4044.113,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.004664352,0.001500667,2
+31/10/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,No,Yes,N/A,/news,1,1,1,0,0.0009375,0,1
+20/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity?fbclid=iwar0qfuh42icdymsbkmud9txzkwmstvt6k_dkz4qignp_nkct-awbse6sfku,United Kingdom,HRW,Pinner,Desktop,Chrome,81.0.4044.138,Windows,Yes,No,/video,N/A,1,1,1,0,0.001076389,0.000358667,2
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,No,No,/video,/,1,1,1,0,0.001261574,0.000133,2
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,No,/news,/exclusive,1,1,1,0,0.010509259,4.23E-05,1
+07/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,KEC,Notting Hill Gate,Desktop,Chrome,81.0.4044.113,Mac OS,No,No,/about,/,1,1,1,0,0.004664352,8.10E-05,2
+06/06/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar1hcy-awf70w6djjp8dz3lqd-nzgopdmpeomegsyegvfxvt97wgwc5mcqa,United Kingdom,ESS,Chelmsford,Desktop,Chrome,83.0.4103.61,Windows,Yes,No,/news,N/A,1,1,1,0,0.000555556,0.000154333,1
+06/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Social,instagram.com,https://l.instagram.com/,_,_,_,/,http://jorjmakesmusic.com,Hong Kong,HCW,Central,Mobile,Chrome,139.0.0.33.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,Spain,M,Madrid,Desktop,Chrome,81.0.4044.129,Windows,No,No,/,/video,1,1,1,0,0.00125,5.20E-05,2
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/video,/about,1,1,1,0,0.017731481,2.30E-05,2
+07/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/maturity,https://jorjmakesmusic.com/maturity,Germany,BE,Berlin,Desktop,Chrome,83.0.4103.116,Linux,No,No,/video,/,1,1,1,0,0.000497685,6.90E-05,1
+07/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,KEC,Notting Hill Gate,Desktop,Chrome,81.0.4044.113,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,0.004664352,0,1
+21/05/2020,Returning Visitor,Social,youtube.com,https://www.youtube.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,Yes,N/A,/maturity,1,1,1,0,0.000532407,0,1
+06/06/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/news/it's-here,http://jorjmakesmusic.com/news/it's-here,United Kingdom,ESS,Chelmsford,Desktop,Chrome,83.0.4103.61,Windows,No,Yes,N/A,/news,1,1,1,0,0.000555556,0,1
+27/06/2020,New Visitor,Organic Search,bing.com,http://www.bing.com/search?q=amazon,_,_,_,/,http://jorjmakesmusic.com,United States,N/A,N/A,Desktop,Chrome,76.0.3809.100,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/maturity,/maturity,1,1,1,0,0.017731481,0.000162,2
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GRE,Greenwich,Mobile,Chrome,268.1.0.54.121,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,No,/about,/about,1,1,1,0,0.000821759,5.80E-05,2
+02/06/2020,New Visitor,Direct,Direct,N/A,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,KEN,Folkestone,Mobile,Safari,266.0.0.32.114,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,8.10E-05,0,1
+29/06/2020,New Visitor,Organic Search,bing.com,http://www.bing.com/search?q=amazon,_,_,_,/,http://jorjmakesmusic.com,Canada,ON,Toronto,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,Spain,M,Madrid,Desktop,Chrome,81.0.4044.129,Windows,No,Yes,N/A,/maturity,1,1,1,0,0.00125,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar2ty8q8pomktvvamdiks_g-p4ggvzm80_ey4k_cx8etsnpwhnsv7yumsow,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,Yes,N/A,/maturity,1,1,1,0,0.017731481,0,1
+01/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ESS,Wivenhoe,Mobile,Chrome,239.1.0.17.119,Android,No,Yes,N/A,/video,1,1,1,0,0.000509259,0,1
+02/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/news/it's-here,http://jorjmakesmusic.com/news/it's-here,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,No,No,/,/news,1,1,1,0,0.001956019,0.0009435,2
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ISL,Islington,Desktop,Firefox,76,Windows,No,No,/video,/,1,1,1,0,0.000185185,1.75E-05,2
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/video,https://jorjmakesmusic.com/video,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,No,No,/,/maturity,1,1,1,0,0.000949074,0.000243,1
+17/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,N/A,N/A,Desktop,Chrome,80.0.3987.132,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+16/07/2020,New Visitor,Social,facebook.com,https://facebook.com/,_,_,_,/,https://jorjmakesmusic.com/?fbclid=iwar21xoh_mot-q0ok0i9xthvama03oklln16jlyonqdcvapj6xfiz1rjw95o,United Kingdom,OXF,Witney,Desktop,Chrome,84.0.4147.89,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/06/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity#,United Kingdom,KEN,Folkestone,Mobile,Safari,266.0.0.32.114,Mac OS,Yes,No,/video,N/A,1,1,1,0,8.10E-05,2.70E-05,2
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,KEN,Ashford,Desktop,Chrome,81.0.4044.129,Mac OS,No,No,/maturity,/,1,1,1,0,0.000416667,2.30E-05,2
+16/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,WSX,Lancing,Desktop,Chrome,83.0.4103.97,Windows,No,Yes,N/A,/news,1,1,1,0,0.000914352,0,1
+07/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,WSX,Burgess Hill,Mobile,Safari,13.1,Mac OS,No,No,/about,/video,1,1,1,0,0.001261574,6.95E-05,2
+06/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BKM,Aylesbury,Mobile,Chrome,77.0.3865.116,Android,Yes,No,/about,N/A,1,1,1,0,0.001203704,0.000185333,2
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,ISL,Islington,Desktop,Firefox,76,Windows,No,Yes,N/A,/maturity,1,1,1,0,0.000185185,0,1
+02/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,MRT,Wimbledon,Desktop,Safari,13.1,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000416667,0,1
+08/06/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SRY,Camberley,Mobile,Chrome,83.0.4103.96,Android,Yes,No,/video,N/A,1,1,1,0,0.000127315,4.23E-05,2
+22/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,No,Yes,N/A,/exclusive,1,1,1,0,0.021354167,0,1
+21/11/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+19/10/2020,New Visitor,Organic Search,google.com,https://google.com/,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,GLG,Glasgow,Tablet,Chrome,85.0.4183.92,iOS,Yes,No,/maturity,N/A,1,1,1,0,0.000949074,0.00037,0
+02/07/2020,New Visitor,Direct,Direct,N/A,_,_,_,/early-access,https://jorjmakesmusic.com/early-access,United Kingdom,SWK,Peckham,Desktop,Chrome,83.0.4103.116,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+09/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,HRW,Pinner,Mobile,Safari,263.1.0.76.121,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+12/06/2020,Returning Visitor,Referral,jorjmakesmusic.com,https://www.jorjmakesmusic.com/video,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,EAL,Northolt,Mobile,Chrome,83.0.4103.101,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video,United Kingdom,ESS,Colchester,Mobile,Chrome,268.1.0.54.121,Android,No,No,/maturity,/maturity,1,1,1,0,0.000740741,5.20E-05,2
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,HAV,Romford,Desktop,Chrome,81.0.4044.129,Windows,No,No,/,/video,1,1,1,0,0.000462963,2.30E-05,2
+03/06/2020,New Visitor,Social,facebook.com,http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.jorjmakesmusic.com%2F&h=AT0jrTCDX_rHkPWMKLuLJaXUCB7ifjq26I5Z9o_sYPrjFnF12QbzCrbpvt2xo4w5MCQRpE94b1mbi6BHUPnuyIuvF5VOMU3nQhumvirajdRyYtxx_MW7s4AKPMKSCg,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SOS,Southend-on-Sea,Mobile,Safari,272.0.0.57.115,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/video,http://jorjmakesmusic.com/video,Sweden,O,Askim,Mobile,Safari,N/A,Mac OS,No,No,/news,/maturity,1,1,1,0,0.000763889,4.05E-05,1
+20/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity?fbclid=iwar0wv2qs3wl_4vvpqgx8fwxmgoqflafeerqccmhp_qd7nnguc8ejsnbkr_i,United Kingdom,ENG,London,Desktop,Chrome,81.0.4044.138,Windows,Yes,Yes,N/A,N/A,1,1,1,0,0.00380787,0,1
+20/05/2020,Returning Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ESS,Colchester,Mobile,Chrome,239.1.0.17.119,Android,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,LEW,N/A,Mobile,Chrome,81.0.4044.117,Android,No,Yes,N/A,/,1,1,1,0,0.010740741,0,1
+07/06/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ISL,Islington,Mobile,Safari,N/A,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+18/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/news,http://jorjmakesmusic.com/news,United Kingdom,MRT,Raynes Park,Desktop,Safari,13.1.1,Mac OS,No,No,/about,/maturity,1,1,1,0,0.000844907,6.95E-05,2
+06/05/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,KEN,Ashford,Desktop,Chrome,81.0.4044.129,Mac OS,No,No,/about,/video,1,1,1,0,0.000416667,0.000104,2
+22/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar1prbeunjexj1hlompn0xsz9d5qjbv9zrxc2q1z9jdjijo9pfiklj_z_k8,United Kingdom,SRY,Camberley,Desktop,Safari,13.1,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.001446759,5.00E-05,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,WSX,Burgess Hill,Mobile,Safari,139.1.0.39.120,Mac OS,Yes,No,/video,N/A,1,1,1,0,0.000752315,0.000239333,2
+05/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/,http://jorjmakesmusic.com,Sweden,O,Askim,Mobile,Safari,N/A,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.000763889,0.000185333,2
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,KEN,Folkestone,Mobile,Safari,N/A,Mac OS,No,No,/maturity,/,1,1,1,0,0.000578704,0.000249,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,Yes,N/A,/maturity,1,1,1,0,0.001585648,0,1
+08/01/2021,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,N/A,N/A,N/A,Desktop,Chrome,71.0.3563.0,Linux,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+21/05/2020,Returning Visitor,Social,youtube.com,https://www.youtube.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,GRE,Greenwich,Desktop,Chrome,81.0.4044.138,Windows,Yes,No,/maturity,N/A,1,1,1,0,0.000532407,2.70E-05,2
+01/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,BNH,Brighton,Mobile,Safari,261.1.0.57.120,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+01/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,LEW,N/A,Desktop,Chrome,81.0.4044.129,Windows,No,No,/news,/,1,1,1,0,0.017731481,5.20E-05,1
+11/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,HRW,Pinner,Mobile,Safari,N/A,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000810185,0,1
+20/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ENG,London,Desktop,Chrome,81.0.4044.138,Windows,Yes,No,/about,N/A,1,1,1,0,1.16E-05,4.00E-06,2
+30/10/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,https://jorjmakesmusic.com,United States,MN,Faribault,Desktop,Chrome,76.0.3809.71,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+05/07/2020,New Visitor,Social,youtube.com,https://youtube.com/,_,_,_,/,https://jorjmakesmusic.com,United Kingdom,ENG,London,Desktop,Chrome,83.0.4103.116,Windows,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+07/05/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,WSX,Burgess Hill,Mobile,Safari,263.0.0.43.121,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/about,http://jorjmakesmusic.com/about,United Kingdom,HAV,Romford,Desktop,Chrome,81.0.4044.129,Windows,No,Yes,N/A,/,1,1,1,0,0.000462963,0,1
+06/05/2020,New Visitor,Social,facebook.com,http://m.facebook.com/,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,ESS,Colchester,Mobile,Chrome,268.1.0.54.121,Android,No,Yes,N/A,/video,1,1,1,0,0.000740741,0,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,Yes,Yes,N/A,N/A,1,1,1,1,0,0,1
+02/06/2020,Returning Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.61,Windows,Yes,No,/news,N/A,1,1,1,0,0.001956019,7.67E-06,1
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,SWK,Rotherhithe,Mobile,Safari,133.0.0.20.118,Mac OS,Yes,No,/maturity,N/A,1,1,1,0,0.000613426,0.000204333,2
+05/05/2020,New Visitor,Social,facebook.com,https://m.facebook.com/,_,_,_,/video,http://jorjmakesmusic.com/video#,United Kingdom,ENG,London,Mobile,Chrome,81.0.4044.117,Android,No,Yes,N/A,/,1,1,1,0,0.002534722,0,1
+05/06/2020,New Visitor,Social,facebook.com,https://l.facebook.com/,_,_,_,/,http://jorjmakesmusic.com,United Kingdom,ESX,Battle,Mobile,Chrome,273.0.0.39.123,Android,Yes,No,/about,N/A,1,1,1,0,0.000115741,3.87E-05,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/contact,http://jorjmakesmusic.com/contact,United Kingdom,ISL,Islington,Mobile,Safari,13.0.5,Mac OS,No,Yes,N/A,/news/it-be-official,1,1,1,0,0.003703704,0,1
+06/05/2020,New Visitor,Social,facebook.com,https://www.facebook.com/,_,_,_,/,http://jorjmakesmusic.com/?fbclid=iwar3hkx9ojybgr3sotqhrxrqojghaonogmirjbxy506cxpam4q8diktj1a1e,United Kingdom,WSX,Cuckfield,Desktop,Chrome,81.0.4044.129,Mac OS,Yes,No,/video,N/A,1,1,1,0,0.000497685,0.000166,2
+05/05/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,SWK,Rotherhithe,Mobile,Safari,133.0.0.20.118,Mac OS,No,Yes,N/A,/,1,1,1,0,0.000613426,0,1
+24/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+29/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+07/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+11/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+31/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+24/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+01/01/2021,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+04/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+04/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+15/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+07/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+02/06/2020,New Visitor,Wix Email Marketing,N/A,N/A,f77045bc-747d-4f40-96e4-d24dcdc34079,mail,so,/early-access,http://jorjmakesmusic.com/early-access?cid=5583f5c0-2ecb-43e2-96b1-f32a12d6fc7b&utm_campaign=f77045bc-747d-4f40-96e4-d24dcdc34079&utm_medium=mail&utm_source=so,United Kingdom,BNH,Brighton,Desktop,Edge,83.0.478,Windows,No,Yes,N/A,/exclusive,0,1,1,0,0.00125,0,1
+30/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+17/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+02/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+17/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+16/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+20/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+01/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+02/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+29/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+29/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+30/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+24/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+08/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+20/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+05/01/2021,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+21/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+01/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+04/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+04/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+16/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+30/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/01/2021,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+02/06/2020,New Visitor,Direct,Direct,N/A,_,_,_,/maturity,http://jorjmakesmusic.com/maturity,United Kingdom,KEN,Folkestone,Mobile,Safari,266.0.0.32.114,Mac OS,Yes,No,/video,N/A,0,1,1,0,8.10E-05,0,1
+19/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+31/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+15/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+30/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+19/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+27/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+01/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+22/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+04/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+19/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+08/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+08/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+20/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+22/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+11/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+11/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+11/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+19/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+27/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+29/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+20/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+24/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+31/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+27/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+21/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+15/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+31/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+07/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+08/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+30/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+02/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+09/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+21/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+27/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+05/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+07/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+15/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+05/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+17/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+17/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+21/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+20/06/2020,Returning Visitor,Wix Email Marketing,N/A,N/A,d5328aae-be6f-4dbc-a1c5-9886f145f202,mail,so,/early-access,http://jorjmakesmusic.com/early-access?cid=bc369a5b-9d85-4e14-bbe3-24a3f6a46334&utm_campaign=d5328aae-be6f-4dbc-a1c5-9886f145f202&utm_medium=mail&utm_source=so,United Kingdom,LEW,N/A,Desktop,Chrome,83.0.4103.106,Windows,Yes,No,/exclusive,N/A,0,1,1,0,0.000949074,0,1
+22/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+08/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+20/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+27/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+07/01/2021,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+27/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+05/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+24/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+09/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/01/2021,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+01/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+30/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+15/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+03/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+09/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+09/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+08/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+24/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+09/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+14/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+02/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+10/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+05/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+13/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+26/05/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+07/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+05/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+16/08/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+22/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+17/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/07/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+01/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+22/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+28/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+17/06/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+25/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+23/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+06/11/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+18/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+04/12/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+29/09/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
+12/10/2020,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Yes,Yes,N/A,N/A,0,0,0,0,0,0,,,
