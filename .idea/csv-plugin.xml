@@ -10,10 +10,31 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\ItemRecommender\MovieLensData.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\ItemRecommender\OneMovieCF.py">
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\ItemRecommender\Tester.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\ReinforcementLearning\tictactoe_classes.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
             </Attribute>
           </value>
         </entry>

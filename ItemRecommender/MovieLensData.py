@@ -62,9 +62,12 @@ class MovieLensData:
     addTestUser(ratings):
         Adds ratings to self.ratingsRaw for userID 0.
     """
+
+    # variables for storing reduced data
     moviesReduced = None
     ratingsReduced = None
 
+    # variables for storing generated data frames
     ratingsPivot = None
     ratingsMean = None
     genreBitfield = None
@@ -78,27 +81,31 @@ class MovieLensData:
         if update:
             datasetUrl = "http://files.grouplens.org/datasets/movielens/ml-latest.zip"
 
+            # Download current 27M MovieLens dataset from GroupLens
             print("Downloading...", end='')
             r = requests.get(datasetUrl)
             with open("input/ml-latest.zip", 'wb') as output:
                 output.write(r.content)
             print('\33[92m', "Done", '\33[0m')
 
+            # Unzip
             print("Extracting...", end='')
             with zipfile.ZipFile("input/ml-latest.zip", 'r') as z:
                 z.extractall("input")
             print('\33[92m', "Done", '\33[0m')
 
+        # Import movies and ratings data to data frames
         print("Loading data...", end='')
         with open("input/ml-latest/movies.csv", encoding="UTF-8") as file:
             self.moviesRaw = pd.read_csv(file)
         with open("input/ml-latest/ratings.csv", encoding="UTF-8") as file:
             self.ratingsRaw = pd.read_csv(file)
 
+        # Split titles and years into separate columns and rearrange column order
         self.moviesRaw['title'] = self.moviesRaw['title'].apply(lambda x: x.strip())
         self.moviesRaw['title'] = self.moviesRaw['title'].apply(lambda x: x.replace('))', ')'))
         self.moviesRaw['year'] = self.moviesRaw['title'].apply(lambda x: x[-5:-1] if x[-5:-1].isdecimal()
-                                                                                    and len(x[-5:-1]) == 4 else None)
+                                                                                     and len(x[-5:-1]) == 4 else None)
         self.moviesRaw['title'] = self.moviesRaw['title'].apply(lambda x: x[:-7] if x[-5:-1].isdecimal()
                                                                                     and len(x[-5:-1]) == 4 else x)
         self.moviesRaw = self.moviesRaw[['movieId', 'title', 'year', 'genres']]
@@ -129,16 +136,19 @@ class MovieLensData:
                                             'randomMovies' idTypes
         :return: list. List of IDs that match criteria
         """
-        if idType in ['userId', 'movieId']:
+
+        if idType in ['userId', 'movieId']:  # reduce movieIDs or UserIDs to only those between min/maxRatings
             counts = self.ratingsRaw[idType].value_counts()
             counts = counts[counts.between(minRatings, maxRatings, inclusive=True)]
             return list(counts.index)
-        elif idType == 'randomRatings':
+        elif idType == 'randomRatings':  # randomly select and return a fraction of userIDs present in ratingsRaw
             users = self.ratingsRaw.sample(frac=fraction, random_state=20)['userId']
             return list(users.index)
-        elif idType == 'randomMovies':
+        elif idType == 'randomMovies':  # randomly select and return a fraction of movieIDs present in ratingsRaw
             movies = self.moviesRaw.sample(frac=fraction, random_state=20)['movieId']
             return list(movies)
+        else:
+            print('\33[91m', "idType error", '\33[0m', sep='')
 
     def reduce(self, IDs, idType, dfType):
         """
@@ -148,7 +158,7 @@ class MovieLensData:
         :param idType: str. Define which column to reduce. Must be either 'userId' or 'movieId'.
         :param dfType: str. Define which DF to reduce. Must be either 'ratings' or 'movies'.
         """
-        if idType in ['userId', 'movieId']:
+        if idType in ['userId', 'movieId']:  # reduce ratings/movies dataframes with input IDs
             if dfType == 'ratings':
                 self.ratingsReduced = self.ratingsRaw[self.ratingsRaw[idType].isin(IDs)].copy()
             elif dfType == 'movies':
@@ -169,20 +179,23 @@ class MovieLensData:
         :param update: bool, default=True. Update self.ratingsPivot with generated DF
         :return: DataFrame. Generated pivot DF
         """
-        if quick:
-            userIDs = self.filterIDs('userId', minRatings=1000)
+        if quick:  # for diagnostic or debugging tests
+            # produces pivot table of users with rating counts between 1000-6000 and movies with min 1000 ratings
+            userIDs = self.filterIDs('userId', minRatings=1000, maxRatings=6000)
             movieIDs = self.filterIDs('movieId', minRatings=1000)
             self.reduce(userIDs, 'userId', 'ratings')
             self.reduce(movieIDs, 'movieId', 'movies')
 
         print("Building movies/ratings pivot df...", end='')
+        # check if reduced data frames have been produced, use raw data if not
         movies = self.moviesReduced.copy() if self.moviesReduced is not None else self.moviesRaw.copy()
         ratings = self.ratingsReduced.copy() if self.ratingsReduced is not None else self.ratingsRaw.copy()
 
+        # merge data from movies and ratings data frames and create pivot table of movieIDs against userIDs
         merge = pd.merge(movies.drop(columns=['genres', 'title']), ratings.drop(columns='timestamp'))
         df = merge.pivot_table(index='userId', columns='movieId', values='rating')
 
-        if extraColumns:
+        if extraColumns:  # add MultiLevel indexing to the columns to show movieIDs, title, and years
             movieIDs = df.columns
             titles = self.getInfo(movieIDs, get='title')
             years = self.getInfo(movieIDs, get='year')
@@ -190,7 +203,7 @@ class MovieLensData:
             df.columns = pd.MultiIndex.from_arrays(columns, names=('movieId', 'title', 'year'))
         print('\33[92m', "Done", '\33[0m')
 
-        if printStats:
+        if printStats:  # display info on the ratings pivot for users/movies/ratings retained from raw data and sparsity
             totalUsers = len(self.ratingsRaw['userId'].unique())
             totalMovies = len(self.moviesRaw['movieId'].unique())
             totalRatings = len(self.ratingsRaw)
@@ -203,7 +216,7 @@ class MovieLensData:
                   round(df.count().sum() * 100 / totalRatings, 2), '%)', '\33[0m', sep='')
             print('\33[94m', round(sparsity.sum() / len(sparsity), 2), "% sparsity", '\33[0m', sep='')
 
-        if update:
+        if update:  # update internally stored variable for the pivot table with a copy
             self.ratingsPivot = df.copy()
         return df
 
@@ -215,29 +228,32 @@ class MovieLensData:
         :param update: bool, default=True. Update self.genreBitfield with generated DF
         :return: DataFrame. Generated genre bit field DF
         """
+        # check if reduced data frames have been produced, use raw data if not
         movies = self.moviesReduced.copy() if self.moviesReduced is not None else self.moviesRaw.copy()
+        # check if IDs to build bit field for has been passed, use above data frames IDs if not
         movieIDs = list(movies['movieId']) if movieIDs is None else movieIDs
 
-        genreDict = dict(zip(movieIDs, self.getInfo(movieIDs, get='genres')))
-        movieGenres = {}
+        # define genre column names for bit field
         genreNames = ['Action', 'Adventure', 'Animation', 'Children', 'Comedy', 'Crime',
                       'Documentary', 'Drama', 'Fantasy', 'Film-Noir', 'Horror', 'Musical',
                       'Mystery', 'IMAX', 'Romance', 'Sci-Fi', 'Thriller', 'War', 'Western', '(no genres listed)']
+        genreDict = dict(zip(movieIDs, self.getInfo(movieIDs, get='genres')))  # build dictionary of movieIDs and genres
+        movieGenres = {}  # create dict to store genre bit fields per movieID
 
         for movieID in movieIDs:
-            genreBits = [0] * len(genreNames)
-            genres = genreDict[movieID].split('|')
+            genreBits = [0] * len(genreNames)  # initialise an all 0 bit field of length of all genres available
+            genres = genreDict[movieID].split('|')  # split pipe-delimited string into individual genres present
             for genre in genres:
-                genreBits[genreNames.index(genre)] = 1
+                genreBits[genreNames.index(genre)] = 1  # change the corresponding bit in the genreBits bitfield to 1
+            movieGenres[movieID] = genreBits  # add bit field to dictionary
 
-            movieGenres[movieID] = genreBits
-
+        # create data frame from dict with genreNames as column names and drop movies with no genre listed
         genreBitfield = pd.DataFrame.from_dict(movieGenres, orient='index')
         genreBitfield.columns = genreNames
         genreBitfield = genreBitfield[genreBitfield['(no genres listed)'] != 1]
         genreBitfield.drop(columns='(no genres listed)', inplace=True)
 
-        if update:
+        if update:  # update internally stored variable for the genre bitfield with a copy
             self.genreBitfield = genreBitfield.copy()
         return genreBitfield
 
@@ -251,21 +267,25 @@ class MovieLensData:
                                                 ratingSize and ratingMean
         :return: DataFrame. Generated mean ratings DF
         """
+        # check if reduced data frames have been produced, use raw data if not
         ratings = self.ratingsReduced.copy() if self.ratingsReduced is not None else self.ratingsRaw.copy()
         ratings.drop(['userId', 'timestamp'], axis=1, inplace=True)
 
+        # calculate means and ratings counts for every movie and rename data frames accordingly
         avg = ratings.groupby('movieId').mean().rename({'rating': 'ratingMean'}, axis=1)
         size = ratings.groupby('movieId').count().rename({'rating': 'rating#'}, axis=1)
+
+        # combine into one data frame and sort
         df = size.join(avg)
         df.sort_values(['rating#', 'ratingMean'], ascending=False, inplace=True)
-        df.insert(0, 'popularity', np.arange(len(df)) + 1)
+        df.insert(0, 'popularity', np.arange(len(df)) + 1)  # add rankings for popularity
 
-        if extraInfo:
+        if extraInfo:  # add information on titles, years and genres
             df.insert(0, 'title', self.getInfo(df.index, get='title'))
             df.insert(1, 'year', self.getInfo(df.index, get='year'))
             df['genres'] = self.getInfo(df.index, get='genres')
 
-        if update:
+        if update:  # update internally stored variable for the mean ratings with a copy
             self.ratingsMean = df.copy()
         return df
 
@@ -277,9 +297,12 @@ class MovieLensData:
         :param ratingPredictions: Series, default=None. MovieIDs and their predicted ratings to reduce ratingsMean DF by
         :return: DataFrame. Generated mean ratings, similarities and predicted ratings DF
         """
+        # check if mean ratings table has been stored, build if not
         ratingsMean = self.buildMeanRatings(extraInfo=True) if self.ratingsMean is None else self.ratingsMean.copy()
-        ratingsMean['similarity'] = similarMovies
-        ratingsMean['rating'] = ratingPredictions
+        ratingsMean['similarity'] = similarMovies  # append similarities
+        ratingsMean['rating'] = ratingPredictions  # append ratings
+
+        # drop movies with missing similarity values and sort by descending similarity
         return ratingsMean.dropna(subset=['similarity']).sort_values('similarity', ascending=False)
 
     def getInfo(self, movieID=None, get=None):
@@ -290,20 +313,21 @@ class MovieLensData:
         :param get: str, default=None. What info to return. Must be either 'title', 'year', or 'genres'
         :return: list. List of strings of all info found for given IDs
         """
-        if movieID is None:
+        if movieID is None:  # if no ID given, get all movieIDs from raw data
             movies = self.moviesRaw.set_index('movieId')
-        else:
+        else:  # method only works if movieIDs are in list form; check if ID given as int and convert to list
             movieID = [movieID] if isinstance(movieID, int) else movieID
+            # check for movieID in raw data and return df for all IDs found
             movies = self.moviesRaw[self.moviesRaw['movieId'].isin(movieID)].set_index('movieId')
             movies = movies.reindex(movieID)
 
-        if get == 'title':
+        if get == 'title':  # returns movie title
             ls = [i for i in movies['title']]
-        elif get == 'year':
+        elif get == 'year':  # returns movie year
             ls = [i for i in movies['year']]
-        elif get == 'genres':
+        elif get == 'genres':  # returns movie genres as pipe-delimited string
             ls = [i for i in movies['genres']]
-        else:
+        else:  # if no get property defined, return df of all information
             return movies.set_index('movieId')
         return list(ls)
 
@@ -314,19 +338,20 @@ class MovieLensData:
         :param movie: str or list. Movie to find. Must be title (str) or list of [title (str), year (str or int)]
         :return: list. Returns all movies that match search criteria
         """
-        allMovies = self.moviesRaw.set_index('movieId')
+        allMovies = self.moviesRaw.set_index('movieId')  # set movieID as index from raw data for method to function
 
-        if isinstance(movie, list):
-            movie = movie[:2]
-            movie = [str(item) for item in movie]
-            df = allMovies[allMovies['title'].str.contains(movie[0])]['year']
-            if len(movie) > 1:
+        if isinstance(movie, list):  # if movie and/or year defined
+            movie = movie[:2]  # reduce list to only first two items.
+            movie = [str(item) for item in movie]  # check list items are strings
+            df = allMovies[allMovies['title'].str.contains(movie[0])]['year']  # search raw data for the title
+            if len(movie) > 1:  # if more than one movie found for title, search data found for the year given
                 ls = df[df.str.contains(movie[1])].index
-            else:
+            else:  # if only one movie found, return movieID
                 ls = df.index
-        elif isinstance(movie, str):
+        elif isinstance(movie, str):  # if only movie title defined, return list of movieIDs for that title name
             ls = allMovies[allMovies['title'].str.contains(movie)].index
         else:
+            print('\33[91m', "Error: movie must in form ['title', 'year'] or 'title'.", '\33[0m', sep='')
             return
         return list(ls)
 
@@ -338,15 +363,15 @@ class MovieLensData:
         :param data: DataFrame, default=None. DF to search. Will search self.ratingsPivot if None
         :return: DataFrame. One column dataframe for the movie. Returns None if movie not found
         """
-        data = self.ratingsPivot if data is None else data
+        data = self.ratingsPivot if data is None else data  # use internally stored ratings pivot table if not given
         df = None
 
-        if isinstance(movie, list):
+        if isinstance(movie, list):  # if movie title and/or year given, search multilevel index for movie
             title = movie[0]
             year = str(movie[1]) if len(movie) > 1 else ''
             df = data.loc[:, data.columns.get_level_values(1).str.contains(title) &
                              data.columns.get_level_values(2).str.contains(year)]
-        elif isinstance(movie, int):
+        elif isinstance(movie, int):  # if movie ID given, search multilevel index for movie
             df = data.loc[:, data.columns.get_level_values(0) == movie]
         return df
 
@@ -360,22 +385,23 @@ class MovieLensData:
         :param buildTable: bool, default=False. Add title and year to DF and return this DF
         :return: Series or DataFrame. Returns series of movieIDs and ratings unless buildTable=True
         """
-        if data is None:
+        if data is None:  # search raw data for user if data not given
             userRatings = self.ratingsRaw.loc[self.ratingsRaw['userId'] == userID].set_index('movieId')
             userRatings.drop(['userId', 'timestamp'], axis=1, inplace=True)
-        else:
+        else:  # search data given
             userRatings = data.loc[[userID]].dropna(axis=1).T.rename(columns={userID: 'rating'})
 
-        if drop:
+        if drop:  # check user's rated movies against those in ratings pivot and remove ratings not in pivot table
             diff = list(set(userRatings.index) - set(self.ratingsPivot.columns))
             userRatings.drop(diff, inplace=True)
 
-        if buildTable:
+        if buildTable:  # add info for titles and years of movies and return data frame
             userRatings.insert(0, 'title', self.getInfo(userRatings.index, get='title'))
             userRatings.insert(1, 'year', self.getInfo(userRatings.index, get='year'))
             print("User ", userID, "'s ratings:", sep='')
             return userRatings
-        return userRatings['rating']
+
+        return userRatings['rating']  # return series of movieIDs and ratings
 
     def addTestUser(self, ratings):
         """
@@ -383,11 +409,13 @@ class MovieLensData:
 
         :param ratings: dict. {ID:rating} pairs for ratings to add.
         """
+        # create data frame from ratings, rename columns, and add empty columns for append to function correctly
         df = pd.DataFrame.from_dict(ratings, orient='index').reset_index()
         df.columns = ['movieId', 'rating']
         df['userId'] = 0
         df['timestamp'] = 0
 
+        # remove any previous test user ratings and append new test ratings
         self.ratingsRaw = self.ratingsRaw[self.ratingsRaw['userId'] != 0].append(df, ignore_index=True)
 
 
@@ -440,13 +468,16 @@ class SplitData:
         :return: DatFrames. self.trainSet, self.testSet, self.validationSet
         """
         print("Building train/test/validation split by row...", end='')
+        # split data frame by row
         self.trainSet, self.testSet_full = train_test_split(self.ratingsPivot, test_size=testSize,
                                                             random_state=randomState)
 
+        # create and store empty data frames with movieIDs as columns for building test/validation sets
         self.testSet = pd.DataFrame(columns=self.testSet_full.columns)
         self.validationSet = pd.DataFrame(columns=self.testSet_full.columns)
 
         for i, row in self.testSet_full.iterrows():
+            # iterate through each row of testSet_full and split ratings into test and validation sets
             test, validation = train_test_split(row, test_size=validationSize, random_state=randomState)
             self.testSet = self.testSet.append(test)
             self.validationSet = self.validationSet.append(validation)
@@ -461,16 +492,18 @@ class SplitData:
         :return: DataFrames/dict. self.LOO_test, self.LOO_droppedRatings, self.LOO_droppedMovies (dict)
         """
         print("Building LeaveOneOut-CrossValidation data...", end='')
+        # store copy of full, un-split test set and create dataframe to store left out ratings
         test = self.testSet_full.copy()
         dropped = pd.DataFrame(np.nan, columns=test.columns, index=test.index)
 
-        for i in test.index:
-            ratedMovies = test.loc[i][test.loc[i].notna()].index
-            drop = random.choice(ratedMovies)
-            dropped.at[i, drop] = test.at[i, drop]
-            self.LOO_droppedMovies[i] = drop
-            test.at[i, drop] = np.nan
+        for i in test.index:  # iterate through rows of full test set
+            ratedMovies = test.loc[i][test.loc[i].notna()].index  # get IDs for user's rated movies
+            drop = random.choice(ratedMovies)  # randomly select one ID
+            dropped.at[i, drop] = test.at[i, drop]  # add dropped rating to dropped data frame
+            self.LOO_droppedMovies[i] = drop  # update internally stored dict with userID, dropped movieID pair
+            test.at[i, drop] = np.nan  # drop rating from test set
 
+        # update internally stored data frames with LOO-CV test/validation sets
         self.LOO_testSet = test
         self.LOO_droppedRatings = dropped
 
@@ -486,6 +519,7 @@ class SplitData:
         :param randomState: int, default=20. Sets the random state of test_train_split for consistent results.
         :return: DataFrames. self.trainSet, self.testSet
         """
+        # run all split methods and return
         self.buildTrainTest(testSize=testSize, validationSize=validationSize, randomState=randomState)
         self.buildLOO()
         return self.trainSet, self.testSet, self.validationSet, self.LOO_droppedMovies

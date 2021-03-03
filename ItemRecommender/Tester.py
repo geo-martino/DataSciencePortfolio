@@ -6,7 +6,6 @@ import time
 from statistics import mean
 
 import pandas as pd
-from IPython.display import display
 from tqdm.auto import tqdm
 
 
@@ -91,18 +90,18 @@ class Metrics:
         :param csvName: str, default=None. Csv filename to store results under.
         """
         self.csvName = csvName
-        if csvName is not None:
+        if csvName is not None:  # for creating csv file
             overwrite = True
-            if os.path.isfile('output/' + csvName + '.csv'):
+            if os.path.isfile('output/' + csvName + '.csv'):  # check if file exists and prompt user
                 overwrite = input(csvName + '.csv already exists. Update this file (u) or overwrite (o)? ') == 'o'
 
-            if overwrite:
+            if overwrite:  # create csv file
                 with open('output/' + csvName + '.csv', 'w', newline='') as file:
                     writer = csv.writer(file)
-                    writer.writerow(['Algorithm', 'TotalIDs', 'MeanTime/s', 'ParameterTest', 'ParameterValue',
-                                     'OtherParameters', 'MAE', 'RMSE', 'Coverage', 'Diversity', 'Novelty',
-                                     'LOOCV_HR', 'Validation_HR', 'Cumulative_HR', 'MeanReciprocal_HR',
-                                     'ActualRating_HR'])
+                    writer.writerow(['Algorithm', 'Top-N', 'MoviesPerPage', 'ThresholdRating', 'TotalIDs',
+                                     'ParameterTest', 'ParameterValue', 'OtherParameters', 'TotalTime/s', 'MeanTime/s',
+                                     'MAE', 'RMSE', 'Coverage', 'Diversity', 'Novelty', 'LOOCV_HR', 'Validation_HR',
+                                     'Cumulative_HR', 'MeanReciprocal_HR', 'ActualRating_HR'])
 
         self.validationSet = validation
         self.LOO_droppedMovies = LOO
@@ -113,11 +112,12 @@ class Metrics:
 
         self.ratings = {}
         self.movies = {}
-        self.similarity = {}
-        self.popularity = {}
+        self.similarities = {}
+        self.popularities = {}
         self.total = {}
 
-        self.metricResults = {}
+        self.metricResults = {'MAE': 0, 'RMSE': 0, 'coverage': 0, 'diversity': 0, 'novelty': 0, 'looHR': 0,
+                              'vHR': 0, 'cHR': 0, 'mrHR': 0, 'arHR': {}}
 
     def readCSV(self, csvName, update=False):
         """
@@ -127,33 +127,37 @@ class Metrics:
         :param update: bool, default=False. Update the filename that the updateCsv method stores results under.
         :return: DataFrame. DF of csv file
         """
-        if not os.path.isfile('output/' + csvName + '.csv'):
+        if not os.path.isfile('output/' + csvName + '.csv'):  # if file doesn't exist
             print('\33[91m', "Error: ", csvName, ".csv not found.", '\33[0m', sep='')
             return
-        with open('output/' + csvName + '.csv', encoding="UTF-8") as file:
+
+        with open('output/' + csvName + '.csv', encoding="UTF-8") as file:  # read into data frame format
             data = pd.read_csv(file)
-        if update:
+
+        if update:  # update stored csv file name
             self.csvName = csvName
         return data
 
-    def updateCSV(self, name, totalIDs=None, meanTime=None, param=None, pValue=None, allParams=None):
+    def updateCSV(self, name, totalTime=None, param=None, pValue=None, allParams=None):
         """
         Add results to the csv file with the filename given in initialisation.
 
         :param name: str. Name of algorithm being tested.
-        :param totalIDs: int, default=None. Total number of IDs tested.
-        :param meanTime: float, default=None. Average time taken per ID in test.
+        :param totalTime: float, default=None. Total test time.
         :param param: str, default=None. Parameter being tested
         :param pValue: int, float or str, default=None. Parameter value of test.
         :param allParams: dict, default=None. All other parameters used not including ID or model.
         """
         if self.csvName is not None:
-            r = self.metricResults
-            with open('output/' + self.csvName + '.csv', 'a', newline='') as file:
+            r = self.metricResults  # results
+            totalIDs = len(self.similarities.keys())  # total number of tests
+            meanTime = totalTime / totalIDs if totalIDs != 0 else None  # average time per test
+
+            with open('output/' + self.csvName + '.csv', 'a', newline='') as file:  # add results
                 writer = csv.writer(file)
-                writer.writerow([name, totalIDs, meanTime, param, pValue, allParams,
-                                 r['MAE'], r['RMSE'], r['coverage'], r['diversity'], r['novelty'],
-                                 r['looHR'], r['vHR'], r['cHR'], r['mrHR'], r['arHR']])
+                writer.writerow([name, self.topN, self.moviesPerPage, self.thresholdRating, totalIDs, param, pValue,
+                                 allParams, totalTime, meanTime, r['MAE'], r['RMSE'], r['coverage'], r['diversity'],
+                                 r['novelty'], r['looHR'], r['vHR'], r['cHR'], r['mrHR'], r['arHR']])
 
     def resetResults(self):
         """
@@ -161,9 +165,12 @@ class Metrics:
         """
         self.ratings = {}
         self.movies = {}
-        self.similarity = {}
-        self.popularity = {}
+        self.similarities = {}
+        self.popularities = {}
         self.total = {}
+
+        self.metricResults = {'MAE': 0, 'RMSE': 0, 'coverage': 0, 'diversity': 0, 'novelty': 0, 'looHR': 0,
+                              'vHR': 0, 'cHR': 0, 'mrHR': 0, 'arHR': {}}
 
     def addResults(self, allResults, userID):
         """
@@ -173,12 +180,15 @@ class Metrics:
                                         'popularity', 'similarity', and 'rating'
         :param userID: int. UserID to add results for.
         """
-        results = allResults[:self.topN]
+        if allResults is None or allResults.empty:  # if no results, do not add
+            return
+
+        results = allResults[:self.topN]  # limit results to top-N only
         self.ratings[userID] = list(results['rating'])
         self.movies[userID] = list(results.index)
-        self.similarity[userID] = list(results['similarity'])
-        self.popularity[userID] = list(results['popularity'])
-        self.total[userID] = len(allResults)
+        self.similarities[userID] = list(results['similarity'])
+        self.popularities[userID] = list(results['popularity'])
+        self.total[userID] = len(allResults)  # total amount of movies recommended
 
     def allMetrics(self, normalise=True, printResults=False, name='unknown', dp=10):
         """
@@ -190,6 +200,10 @@ class Metrics:
         :param name: str, default='unknown'. Name of current algorithm to print if printResults=True
         :param dp: int, default=10. Decimal point to round results to in console if printResults=True.
         """
+        if len(self.movies) == 0:  # if no results, return
+            return
+
+        # run metrics
         arHR = self.actualRatingHR(normalise=normalise)
         self.metricResults = {
             'MAE': self.MAE(),
@@ -201,11 +215,11 @@ class Metrics:
             'vHR': self.validationHR(),
             'cHR': self.cumulativeHR(),
             'mrHR': self.meanReciprocalHR(),
-            'arHR': arHR.to_dict()['arHR']
+            'arHR': arHR.to_dict()
         }
 
         if printResults:
-            r = [round(x, dp) for x in list(self.metricResults.values())[:-1]]
+            r = [round(x, dp) for x in list(self.metricResults.values())[:-1]]  # round results
 
             print('\n', '\33[92;1;4m', 'Results for ', name, ' algorithm', '\n', '\33[0m', sep='')
             print('MAE = {}'.format(r[0]),
@@ -220,7 +234,7 @@ class Metrics:
                   'Cumulative HitRate = {}'.format(r[7]),
                   'Mean Reciprocal HitRate = {}'.format(r[8]), sep='\n')
             print('Actual Rating HitRate:', end='')
-            display(round(arHR, dp))
+            print(round(arHR, dp))
 
     def MAE(self):
         """
@@ -230,11 +244,13 @@ class Metrics:
         """
         MAE = 0
         for userID, recommendedMovies in self.movies.items():
-            predictedRatings = pd.Series(self.ratings[userID], recommendedMovies)
-            actualRatings = self.validationSet.loc[userID].dropna()
+            predictedRatings = pd.Series(self.ratings[userID], recommendedMovies)  # movies recommended
+            actualRatings = self.validationSet.loc[userID].dropna()  # movies in validation set
             hits = list(set(recommendedMovies).intersection(actualRatings.index))
+
+            # add mean of the difference between predicted rating and actual rating if there are any hits
             MAE += mean(abs(predictedRatings[hits] - actualRatings[hits])) if hits else 0
-        return MAE / len(self.movies)
+        return MAE / len(self.movies)  # normalise with total movies rated
 
     def RMSE(self):
         """
@@ -244,11 +260,13 @@ class Metrics:
         """
         RMSE = 0
         for userID, recommendedMovies in self.movies.items():
-            predictedRatings = pd.Series(self.ratings[userID], recommendedMovies)
-            actualRatings = self.validationSet.loc[userID].dropna()
+            predictedRatings = pd.Series(self.ratings[userID], recommendedMovies)  # movies recommended
+            actualRatings = self.validationSet.loc[userID].dropna()  # movies in validation set
             hits = list(set(recommendedMovies).intersection(actualRatings.index))
+
+            # difference of predicted rating and actual rating, squared, mean, square root and add if there are any hits
             RMSE += (mean((predictedRatings[hits] - actualRatings[hits]) ** 2)) ** 0.5 if hits else 0
-        return RMSE / len(self.movies)
+        return RMSE / len(self.movies)  # normalise with total movies rated
 
     def coverage(self):
         """
@@ -265,9 +283,9 @@ class Metrics:
         :return: int. Diversity
         """
         diversity = 0
-        for similarities in self.similarity.values():
-            diversity += 1 - mean(similarities)
-        return diversity / len(self.similarity)
+        for similarities in self.similarities.values():
+            diversity += 1 - mean(similarities)  # calculate reverse mean of similarities and add
+        return diversity / len(self.similarities)  # normalise with total similar movies
 
     def novelty(self):
         """
@@ -276,9 +294,9 @@ class Metrics:
         :return: int. Novelty
         """
         novelty = 0
-        for popularity in self.popularity.values():
-            novelty += mean(popularity) / len(self.validationSet.columns)
-        return novelty / len(self.popularity)
+        for popularity in self.popularities.values():
+            novelty += mean(popularity) / len(self.validationSet.columns)  # calculate mean popularity per total movies
+        return novelty / len(self.popularities)  # normalise with total recommendations
 
     def LOOHR(self):
         """
@@ -289,7 +307,7 @@ class Metrics:
         HR = 0
         for userID, recommendedMovies in self.movies.items():
             HR += 1 if self.LOO_droppedMovies[userID] in recommendedMovies else 0
-        return HR / len(self.movies)
+        return HR / len(self.movies)  # normalise with total movies rated
 
     def validationHR(self):
         """
@@ -299,9 +317,10 @@ class Metrics:
         """
         HR = 0
         for userID, recommendedMovies in self.movies.items():
-            actualMovies = self.validationSet.loc[userID].dropna().index
-            HR += len(set(actualMovies).intersection(recommendedMovies)) / self.topN
-        return HR / len(self.movies)
+            actualMovies = self.validationSet.loc[userID].dropna().index  # movies in validation set
+            # no. of hits / total movies recommended
+            HR += len(set(actualMovies).intersection(recommendedMovies)) / recommendedMovies
+        return HR / len(self.movies)  # normalise with total movies rated
 
     def cumulativeHR(self):
         """
@@ -311,11 +330,12 @@ class Metrics:
         """
         cHR = 0
         for userID, predictedRatings in self.ratings.items():
+            # reduce results to only those above threshold rating
             results = [self.movies[userID][i] for i in range(len(predictedRatings))
                        if predictedRatings[i] >= self.thresholdRating]
-            actualMovies = self.validationSet.loc[userID].dropna().index
-            cHR += len(set(actualMovies).intersection(results)) / self.topN
-        return cHR / len(self.movies)
+            actualMovies = self.validationSet.loc[userID].dropna().index  # movies in validation set
+            cHR += len(set(actualMovies).intersection(results)) / self.topN  # no. of hits / total movies recommended
+        return cHR / len(self.movies)  # normalise with total movies rated
 
     def meanReciprocalHR(self):
         """
@@ -326,13 +346,15 @@ class Metrics:
         """
         mrHR = 0
         for userID, recommendedMovies in self.movies.items():
-            pages = math.ceil(len(recommendedMovies) / self.moviesPerPage)
+            pages = math.ceil(len(recommendedMovies) / self.moviesPerPage)  # total number of pages
+            actualMovies = self.validationSet.loc[userID].dropna().index  # movies in validation set
+
             for page in range(pages):
-                minRank = page * self.moviesPerPage
-                actualMovies = self.validationSet.loc[userID].dropna().index
-                thisPage = recommendedMovies[minRank: minRank + self.moviesPerPage]
+                minRank = page * self.moviesPerPage  # minimum rank for this page
+                thisPage = recommendedMovies[minRank: minRank + self.moviesPerPage]  # movies in this page
+                # hit rate over page number and top-N
                 mrHR += len(set(actualMovies).intersection(thisPage)) / ((page + 1) * self.topN)
-        return mrHR / len(self.movies)
+        return mrHR / len(self.movies)  # normalise with total movies rated
 
     def actualRatingHR(self, normalise=True):
         """
@@ -342,15 +364,15 @@ class Metrics:
         :param normalise: bool, default=True. Normalise results by dividing by movies present in validation set per user
         :return: DataFrame. Actual Rating Hit Rate DF
         """
-        arHR = pd.Series()
+        arHR = pd.Series()  # to store results
         for userID, recommendedMovies in self.movies.items():
-            actualRatings = self.validationSet.loc[userID].dropna()
-            hits = list(set(recommendedMovies).intersection(actualRatings.index))
-            reducedRatings = actualRatings[hits]
-            weighted = reducedRatings.value_counts()
-            weighted /= len(actualRatings) if normalise else 1
+            actualRatings = self.validationSet.loc[userID].dropna()  # movies in validation set
+            hits = list(set(recommendedMovies).intersection(actualRatings.index))  # recommended movies in validation
+            reducedRatings = actualRatings[hits]  # ratings of hits
+            weighted = reducedRatings.value_counts()  # count ratings of hits
+            weighted /= len(actualRatings) if normalise else 1  # normalise with number of movies in validation set
             arHR = arHR.add(weighted, fill_value=0)
-        return pd.DataFrame(arHR / len(self.movies), columns=['arHR']).rename_axis(index='rating').sort_index()
+        return arHR.rename('arHR').sort_index().divide(len(self.movies))  # sort and normalise with total movies rated
 
 
 class Tester:
@@ -376,7 +398,7 @@ class Tester:
         (unless sampleTest is not None).
     """
 
-    algorithms = {}
+    algorithms = {}  # stores algorithm names, functions, models, and kwargs
 
     def __init__(self, evaluator):
         """
@@ -404,6 +426,7 @@ class Tester:
         :param name: str. Algorithm name to remove from the self.algorithms dictionary.
         """
         del self.algorithms[name]
+        print("Removed", name, "- Remaining algorithms:", list(self.algorithms.keys()))
 
     def runParameterTest(self, testData, param, pRange, testAlgo=None, sampleTest=None, printResults=False):
         """
@@ -417,8 +440,8 @@ class Tester:
         :param sampleTest: int, default=None. Sample a random number of users from testData.
         :param printResults: bool, default=False. Show print out of results and leave tqdm bar in console.
         """
-        bar = tqdm(pRange, desc='Parameter Testing', unit='Parameter', leave=False, file=sys.stdout)
-        for pValue in bar:
+        bar = tqdm(pRange, desc='Parameter Testing', unit='Parameter', leave=False, file=sys.stdout)  # progress bar
+        for pValue in bar:  # run tests
             self.runBasicTest(testData, param, pValue, testAlgo, sampleTest, printResults)
 
     def runBasicTest(self, testData, param=None, pValue=None, testAlgo=None, sampleTest=None, printResults=False):
@@ -434,46 +457,28 @@ class Tester:
         :param printResults: bool, default=False. Show print out of results and leave tqdm bar in console.
         :return:
         """
-        if testAlgo is None:
-            for nameAlgo in self.algorithms:
-                algorithm = self.algorithms[nameAlgo][0]
-                model = self.algorithms[nameAlgo][1].get('model')
-                kwargs = {k: v for k, v in self.algorithms[nameAlgo][1].items() if k != 'model'}
-                kwargs.pop(param, None)
+        algorithms = list(self.algorithms.keys()) if testAlgo is None else testAlgo  # algorithm names to be tested
+        algorithms = algorithms if isinstance(algorithms, list) else [algorithms]  # check names are in list form
 
-                IDs = testData.index if sampleTest is None else testData.sample(n=sampleTest).index
-                bar = tqdm(IDs, desc='Testing ' + nameAlgo, unit=' Users', leave=printResults, file=sys.stdout)
-                self.evaluator.resetResults()
+        for nameAlgo in algorithms:
+            algorithm = self.algorithms[nameAlgo][0]  # algorithm function
+            model = self.algorithms[nameAlgo][1].get('model')  # algorithm model
+            kwargs = {k: v for k, v in self.algorithms[nameAlgo][1].items() if k != 'model'}  # drop model from kwargs
+            kwargs.pop(param, None)  # drop testing parameter from kwargs
 
-                t_start = time.perf_counter()
-                for ID in bar:
-                    if param is None or 'random' in str(algorithm):
-                        self.evaluator.addResults(algorithm(ID, model, **kwargs), ID)
-                    else:
-                        self.evaluator.addResults(algorithm(ID, model, **kwargs, **{param: pValue}), ID)
-
-                meanTime = (time.perf_counter() - t_start) / len(IDs)
-                self.evaluator.allMetrics(name=nameAlgo, printResults=printResults)
-                self.evaluator.updateCSV(nameAlgo, len(IDs), meanTime, param, pValue, kwargs)
-            return
-        else:
-            algorithm = self.algorithms[testAlgo][0]
-            model = self.algorithms[testAlgo][1].get('model')
-            kwargs = {k: v for k, v in self.algorithms[testAlgo][1].items() if k != 'model'}
-            kwargs.pop(param, None)
-
-            IDs = testData.index if sampleTest is None else testData.sample(n=sampleTest).index
-            bar = tqdm(IDs, desc='Testing ' + testAlgo, unit=' Users', leave=printResults, file=sys.stdout)
+            IDs = testData.index if sampleTest is None else testData.sample(n=sampleTest).index  # all IDs to be tested
+            bar = tqdm(IDs, desc='Testing ' + nameAlgo, unit=' Users', leave=printResults, file=sys.stdout)  # progress
             self.evaluator.resetResults()
 
-            t_start = time.perf_counter()
+            t_start = time.perf_counter()  # start timer
             for ID in bar:
-                if param is None or 'random' in str(algorithm):
-                    self.evaluator.addResults(algorithm(ID, model, **kwargs), ID)
-                else:
-                    self.evaluator.addResults(algorithm(ID, model, **kwargs, **{param: pValue}), ID)
+                if param is None or 'random' in str(algorithm):  # if no parameter test or algorithm is random control
+                    self.evaluator.addResults(algorithm(ID, model, buildTable=True, **kwargs), ID)
+                else:  # if parameter test
+                    self.evaluator.addResults(algorithm(ID, model, buildTable=True, **kwargs, **{param: pValue}), ID)
 
-            meanTime = (time.perf_counter() - t_start) / len(IDs)
-            self.evaluator.allMetrics(name=testAlgo, printResults=printResults)
-            self.evaluator.updateCSV(testAlgo, len(IDs), meanTime, param, pValue, kwargs)
-            return
+            totalTime = time.perf_counter() - t_start
+            kwargs.pop('modelType', None)  # drop model type, not needed in csv
+            self.evaluator.allMetrics(name=nameAlgo, printResults=printResults)  # run metrics
+            self.evaluator.updateCSV(nameAlgo, totalTime, param, pValue, kwargs)  # add results to csv
+        return
