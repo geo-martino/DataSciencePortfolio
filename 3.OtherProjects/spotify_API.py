@@ -1,7 +1,10 @@
+# work in progress (WIP)
+
 import json
+
+import matplotlib.pyplot as plt
 import pandas as pd
 import requests
-import matplotlib.pyplot as plt
 import seaborn as sns
 
 pd.set_option('display.max_columns', None)

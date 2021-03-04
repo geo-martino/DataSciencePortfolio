@@ -41,7 +41,7 @@ class Metrics:
     addResults(allResults, userID):
         Updates the dictionaries storing results.
 
-    allMetrics(name='unknown', dp=10, normalise=True, printResults=False):
+    allMetrics(name='unknown', LOOCV=False, normalise=True, printResults=False, dp=10):
         Runs all metrics and stores the values in self.metricResults.
 
     MAE():
@@ -77,13 +77,13 @@ class Metrics:
         Can be normalised by dividing HR by the movies present in the validation set for each user.
     """
 
-    def __init__(self, validation, LOO, topN=None, moviesPerPage=5, thresholdRating=3.0, csvName=None):
+    def __init__(self, validation, LOO_dropped, topN=None, moviesPerPage=5, thresholdRating=3.0, csvName=None):
         """
         Initialises attributes and creates new csv file for storing results. Checks if one already exists and queries
         user if already exists.
 
         :param validation: DataFrame. The ratings removed from testSet for validation.
-        :param LOO: dict. {userID: movieID} pairs for movies removed from LOO_test
+        :param LOO_dropped: dict. {userID: movieID} pairs for movies removed from LOO_test
         :param topN: int, default=10. TopN movies to sample in metrics.
         :param moviesPerPage: int, default=5. Movies that will appear every page in final customer view for mrHR metric.
         :param thresholdRating: int or float, default=3.0. Minimum acceptable rating for cumulativeHR metric.
@@ -104,7 +104,7 @@ class Metrics:
                                      'Cumulative_HR', 'MeanReciprocal_HR', 'ActualRating_HR'])
 
         self.validationSet = validation
-        self.LOO_droppedMovies = LOO
+        self.LOO_droppedMovies = LOO_dropped
 
         self.topN = topN
         self.moviesPerPage = moviesPerPage
@@ -190,14 +190,16 @@ class Metrics:
         self.popularities[userID] = list(results['popularity'])
         self.total[userID] = len(allResults)  # total amount of movies recommended
 
-    def allMetrics(self, normalise=True, printResults=False, name='unknown', dp=10):
+    def allMetrics(self, name='unknown', LOOCV=False, normalise=True, printResults=False, dp=10):
         """
         Runs all metrics and stores the values in self.metricResults.
 
+        :param name: str, default='unknown'. Name of current algorithm to print if printResults=True
+        :param LOOCV: bool, default=False. If True, run LOO-CV HR metric. If False, run validationHR metric instead
         :param normalise: bool, default=True. Passes to arHR method. Normalises results by dividing by movies present
                                             in validation set per user
         :param printResults: bool, default=False. Show print out of results in console.
-        :param name: str, default='unknown'. Name of current algorithm to print if printResults=True
+
         :param dp: int, default=10. Decimal point to round results to in console if printResults=True.
         """
         if len(self.movies) == 0:  # if no results, return
@@ -205,14 +207,16 @@ class Metrics:
 
         # run metrics
         arHR = self.actualRatingHR(normalise=normalise)
+        looHR = self.LOOHR() if LOOCV else None
+        vHR = self.validationHR() if not LOOCV else None
         self.metricResults = {
             'MAE': self.MAE(),
             'RMSE': self.RMSE(),
             'coverage': self.coverage(),
             'diversity': self.diversity(),
             'novelty': self.novelty(),
-            'looHR': self.LOOHR(),
-            'vHR': self.validationHR(),
+            'looHR': looHR,
+            'vHR': vHR,
             'cHR': self.cumulativeHR(),
             'mrHR': self.meanReciprocalHR(),
             'arHR': arHR.to_dict()
@@ -319,7 +323,7 @@ class Metrics:
         for userID, recommendedMovies in self.movies.items():
             actualMovies = self.validationSet.loc[userID].dropna().index  # movies in validation set
             # no. of hits / total movies recommended
-            HR += len(set(actualMovies).intersection(recommendedMovies)) / recommendedMovies
+            HR += len(set(actualMovies).intersection(recommendedMovies)) / len(recommendedMovies)
         return HR / len(self.movies)  # normalise with total movies rated
 
     def cumulativeHR(self):
@@ -389,11 +393,11 @@ class Tester:
     removeAlgorithm(name):
         Removes an algorithms from the self.algorithms dictionary.
 
-    runParameterTest(testData, param, pRange, testAlgo=None, sampleTest=None, printResults=False):
+    runParameterTest(testData, param, pRange, LOOCV=False, testAlgo=None, sampleTest=None, printResults=False):
         Run tests for all algorithms in self.algorithms (unless testAlgo is not None) across all users in testData
         (unless sampleTest is not None) for a given range of values of a parameter.
 
-    runBasicTest(testData, param=None, pValue=None, testAlgo=None, sampleTest=None, printResults=False):
+    runBasicTest(testData, param=None, pValue=None, LOOCV=False, testAlgo=None, sampleTest=None, printResults=False):
         Run tests for all algorithms in self.algorithms (unless testAlgo is not None) across all users in testData
         (unless sampleTest is not None).
     """
@@ -428,7 +432,8 @@ class Tester:
         del self.algorithms[name]
         print("Removed", name, "- Remaining algorithms:", list(self.algorithms.keys()))
 
-    def runParameterTest(self, testData, param, pRange, testAlgo=None, sampleTest=None, printResults=False):
+    def runParameterTest(self, testData, param, pRange, LOOCV=False, testAlgo=None, sampleTest=None,
+                         printResults=False):
         """
         Run tests for all algorithms in self.algorithms (unless testAlgo is not None) across all users in testData
         (unless sampleTest is not None) for a given range of values of a parameter.
@@ -436,20 +441,23 @@ class Tester:
         :param testData: DataFrame. Pivoted DF of- columns: movieId, index: userId, values: ratings to test.
         :param param: str, default=None. Parameter to test.
         :param pRange: iterator or list, default=None. Range of parameter values to test.
+        :param LOOCV: bool, default=False. Define whether test data is LOO-CV data or not
         :param testAlgo: str, default=None. Name of algorithm from self.algorithms to test.
         :param sampleTest: int, default=None. Sample a random number of users from testData.
         :param printResults: bool, default=False. Show print out of results and leave tqdm bar in console.
         """
         bar = tqdm(pRange, desc='Parameter Testing', unit='Parameter', leave=False, file=sys.stdout)  # progress bar
         for pValue in bar:  # run tests
-            self.runBasicTest(testData, param, pValue, testAlgo, sampleTest, printResults)
+            self.runBasicTest(testData, param, pValue, LOOCV, testAlgo, sampleTest, printResults)
 
-    def runBasicTest(self, testData, param=None, pValue=None, testAlgo=None, sampleTest=None, printResults=False):
+    def runBasicTest(self, testData, param=None, pValue=None, LOOCV=False, testAlgo=None, sampleTest=None,
+                     printResults=False):
         """
         Run tests for all algorithms in self.algorithms (unless testAlgo is not None) across all users in testData
         (unless sampleTest is not None).
 
         :param testData: DataFrame. Pivoted DF of- columns: movieId, index: userId, values: ratings to test.
+        :param LOOCV: bool, default=False. Define whether test data is LOO-CV data or not
         :param param: str, default=None. Enter a parameter to test or to adjust after adding an algorithm.
         :param pValue: int, float or str, default=None. Parameter value if param is not None.
         :param testAlgo: str, default=None. Name of algorithm from self.algorithms to test.
@@ -479,6 +487,6 @@ class Tester:
 
             totalTime = time.perf_counter() - t_start
             kwargs.pop('modelType', None)  # drop model type, not needed in csv
-            self.evaluator.allMetrics(name=nameAlgo, printResults=printResults)  # run metrics
+            self.evaluator.allMetrics(name=nameAlgo, LOOCV=LOOCV, printResults=printResults)  # run metrics
             self.evaluator.updateCSV(nameAlgo, totalTime, param, pValue, kwargs)  # add results to csv
         return

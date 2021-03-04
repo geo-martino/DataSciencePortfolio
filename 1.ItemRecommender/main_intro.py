@@ -18,17 +18,17 @@
 # In[1]:
 
 
-import importlib
 import warnings
 from time import perf_counter
 
-import Algorithms
-import MovieLensData
-import OneMovieCF
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 from IPython.display import display
+
+import Algorithms
+import MovieLensData
+import OneMovieCF
 
 warnings.filterwarnings('ignore')
 pd.options.display.float_format = '{:20,.6f}'.format

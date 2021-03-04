@@ -522,4 +522,4 @@ class SplitData:
         # run all split methods and return
         self.buildTrainTest(testSize=testSize, validationSize=validationSize, randomState=randomState)
         self.buildLOO()
-        return self.trainSet, self.testSet, self.validationSet, self.LOO_droppedMovies
+        return self.trainSet, self.testSet, self.validationSet, self.LOO_testSet, self.LOO_droppedMovies
