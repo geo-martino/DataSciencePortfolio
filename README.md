@@ -14,7 +14,7 @@ Designing and testing algorithms to recommend movies for a 'Netflix' style recom
 
 >The project is described by Jupyter Notebooks in 2 parts: 
 >- **main_intro.ipynb** - Covers analysis of the data set to make informed decisions about how best to design the algorithms. Then demonstrates the inner workings of the algorithms and touches on some of their differences.
->- **main_test.ipynb** *(WIP)* - Tests the algorithms using various metrics and discusses which parameter values are most appropriate for the end-user use case of a 'Netflix' style system, and which would be most appropriate for a business looking to increase engagement.
+>- **main_test.ipynb** - Tests the algorithms using various metrics and discusses which parameter values are most appropriate for the end-user use case of a 'Netflix' style system, and which would be most appropriate for a business looking to increase engagement.
 >
 >>These notebooks draw on 4 python files which contain the various classes they need to run. Filenames and classes contained within them follow.
 >>- **MovieLensData.py**: 
