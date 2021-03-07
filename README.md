@@ -18,16 +18,16 @@ Designing and testing algorithms to recommend movies for a 'Netflix' style recom
 >
 >>These notebooks draw on 4 python files which contain the various classes they need to run. Filenames and classes contained within them follow.
 >>- **MovieLensData.py**: 
->>	- *MovieLensData*: Downloads, updates, and loads MovieLens data set. Contains methods for reducing the dataset, and building pivot tables, genre bitfields, and mean ratings tables. Also contains methods for getting info on movies or users from the raw or reduced data.
->>	- *SplitData*: Splits the data into train-test-validation splits and LeaveOneOut cross validation for testing quality of the algorithms.
+>>		- *MovieLensData*: Downloads, updates, and loads MovieLens data set. Contains methods for reducing the dataset, and building pivot tables, genre bitfields, and mean ratings tables. Also contains methods for getting info on movies or users from the raw or reduced data.
+>>		- *SplitData*: Splits the data into train-test-validation splits and LeaveOneOut cross validation for testing quality of the algorithms.
 >>- **OneMovieCF.py**:
->>  - *OneMovieCF*: Implements simple, but slow, item-based collaborative filtering for one movie using cosine similarity.
+>>  	- *OneMovieCF*: Implements simple, but slow, item-based collaborative filtering for one movie using cosine similarity.
 >>- **Algorithms.py**: 
->>	- *BuildCF*: Builds the item- and user- based collaborative filtering similarity matrices, drawing on movie/user ratings, genres, and years to generate similarity scores for all movies
->>	- *Algorithms*: Builds algorithmic models and generates movie recommendations from these models. Contains separate methods for single item, user-item and user-user based recommendations. Also contains methods for getting info on movies or users from the data.
+>>		- *BuildCF*: Builds the item- and user- based collaborative filtering similarity matrices, drawing on movie/user ratings, genres, and years to generate similarity scores for all movies
+>>		- *Algorithms*: Builds algorithmic models and generates movie recommendations from these models. Contains separate methods for single item, user-item and user-user based recommendations. Also contains methods for getting info on movies or users from the data.
 >>- **Tester.py**:
->>	- *Metrics*: Stores results and analyses these results with various metrics. Contains methods for reading and updating results for csv files, and calculating metrics including MAE, RMSE, Coverage, Diversity, Novelty, and various types of HitRate.
->>	- *Tester*: Stores the algorithms to test and runs Metrics object for each algorithm. Contains methods for basic and parameter testing from a test set.
+>>		- *Metrics*: Stores results and analyses these results with various metrics. Contains methods for reading and updating results for csv files, and calculating metrics including MAE, RMSE, Coverage, Diversity, Novelty, and various types of HitRate.
+>>		- *Tester*: Stores the algorithms to test and runs Metrics object for each algorithm. Contains methods for basic and parameter testing from a test set.
 
 	
 ## Reinforcement Learning
