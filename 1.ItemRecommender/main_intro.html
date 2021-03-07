@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>1_ML-intro_main</title><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=r0tMirLT35ROeTL_dW3SFXT5tayJH_r8Z2aWG8lmroZHsKMEqYEGbJO6d9GHoAV1F6aYk6WILA13vIsfqoL8u4nnz89_Td3L_PS1req5BCD2HP_JQ-gVJDKtxcRKlxfzoAvxHkalNAWl_4ymjNdldEsV0Q_BpsNhRUV2o91UWBw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL2xvY2FsaG9zdDo4ODg4L25iY29udmVydC9odG1sL0RhdGFTY2llbmNlUG9ydGZvbGlvL0l0ZW1SZWNvbW1lbmRlci8xX01MLWludHJvX21haW4uaXB5bmI_ZG93bmxvYWQ9dHJ1ZQ"/><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>main_intro</title><script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=B3ZvSQ24iNaH-AIUQxCgRzIJQVcDX3iAEu23YB2xvELgM-zBLZ1eayH9ss-wZviLD1RvsNLEIwQuN6AB-_z1GrSdgUmJ4_icF0ZaEedNjlVx7Sd0_Irjo9FdrjnGH03xYTezoaG6W2zT4eYgqikt9P9Dk1JoLybhyUPdsVZJ9wg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL2xvY2FsaG9zdDo4ODg4L25iY29udmVydC9odG1sL0RhdGFTY2llbmNlUG9ydGZvbGlvLzEuSXRlbVJlY29tbWVuZGVyL21haW5faW50cm8uaXB5bmI_ZG93bmxvYWQ9dHJ1ZQ"/><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14266,7 +14266,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The MovieLens dataset, made by GroupLens, contains movies, tags, genres, and user ratings from real users, contributed voluntarily and gathered over various timeframes. GroupLens offer various version of the data set; this project uses the full 27M dataset which is open and free for educational and research purposes.</p>
 <p>The aim of this project is to use the movie information and user ratings to build recommender systems using different approaches and algorithms. The algorithms are built with a focus on top-N recommendations and an end user application similar to Netflix where movies are shown on pages containing 5 movies per page. The algorithms will be able to take single movies, many movies, or a user's past ratings to achieve this.</p>
-<p>The project comes in two parts. This first part gives an overview of the dataset and the algorithms, how the algorithms work, their use cases, and the various methods present in the objects used to access them contained in the associated python files. Part 2 takes a deeper dive into testing, comparing the accuracy of the algorithms using train-test-validation splits of the dataset, with a look at how the parameters coded into the algorithm affect the metrics used to test them. For further information on how each class works, see the documentation contained in MovieLensData.py, OneMovieCF.py, Algorithms.py, SplitData.py, and Tester.py.</p>
+<p>The project comes in two parts. This first part gives an overview of the dataset and the algorithms, how the algorithms work, their use cases, and the various methods present in the objects used to access them contained in the associated python files. Part 2 takes a deeper dive into testing, comparing the accuracy of the algorithms using train-test-validation splits of the dataset, with a look at how the parameters coded into the algorithm affect the metrics used to test them. For further information on how each class works, see the documentation contained in MovieLensData.py, OneMovieCF.py, Algorithms.py, and Tester.py.</p>
 
 </div>
 </div>
@@ -14289,7 +14289,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">importlib</span>
@@ -14317,7 +14317,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ml</span> <span class="o">=</span> <span class="n">MovieLensData</span><span class="o">.</span><span class="n">MovieLensData</span><span class="p">()</span>
@@ -14372,7 +14372,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">ml</span><span class="o">.</span><span class="n">moviesRaw</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
@@ -14554,7 +14554,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ratingCount</span> <span class="o">=</span> <span class="n">ml</span><span class="o">.</span><span class="n">ratingsRaw</span><span class="p">[</span><span class="s1">&#39;rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
@@ -14620,7 +14620,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">means</span> <span class="o">=</span> <span class="n">ml</span><span class="o">.</span><span class="n">ratingsRaw</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="s1">&#39;movieId&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;userId&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
@@ -14683,7 +14683,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span> <span class="o">=</span> <span class="n">means</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">ml</span><span class="o">.</span><span class="n">ratingsRaw</span><span class="p">[</span><span class="s1">&#39;userId&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s1">&#39;Len-Means&#39;</span><span class="p">))</span>
@@ -14734,7 +14734,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">userRatingCount</span> <span class="o">=</span> <span class="n">ml</span><span class="o">.</span><span class="n">ratingsRaw</span><span class="p">[</span><span class="s1">&#39;userId&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14785,7 +14785,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">movieRatingCount</span> <span class="o">=</span> <span class="n">ml</span><span class="o">.</span><span class="n">ratingsRaw</span><span class="p">[</span><span class="s1">&#39;movieId&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14851,7 +14851,7 @@ Total # of movies rated: 53889
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">userIDs</span> <span class="o">=</span> <span class="n">ml</span><span class="o">.</span><span class="n">filterIDs</span><span class="p">(</span><span class="s1">&#39;userId&#39;</span><span class="p">,</span> <span class="n">minRatings</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">maxRatings</span><span class="o">=</span><span class="mi">6000</span><span class="p">)</span>
@@ -19499,469 +19499,6 @@ Weighting similarities by rating and predicting ratings... <span class="ansi-gre
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Much faster than item-based KNN. Speed is not the most important consideration though and we will be testing the accuracy of these algorithms in the next part of this project.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="SVD">SVD<a class="anchor-link" href="#SVD">&#182;</a></h2>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>One last method we can consider is SVD. SVD is a matrix decomposition method, which separates the matrix into its constituent parts to make calculations on it simpler. The matrices produced are given by the formula, A = U . E . V^T, where A is the matrix to decompose of dimensions m x n (the ratings pivot data frame in our case), U is an m x m matrix, E is a diagonal matrix of m x n, and V^T is the transposed n x n matrix.</p>
-<p>By finding the dot product of these 3 matrics, we can produce a similarity matrix that can be used to get similarities for a user very quickly due the SVD algorithm effectively filling in the missing values in our ratings pivot.</p>
-<p>However, the drawback is this matrix must be recalculated every time a user adds a new rating, or a new user is added making it a slow model for initialisation and updates.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">algo</span><span class="o">.</span><span class="n">addTestUser</span><span class="p">(</span><span class="n">mainRatings</span><span class="p">)</span>
-<span class="n">SVD_model</span> <span class="o">=</span> <span class="n">algo</span><span class="o">.</span><span class="n">buildModel</span><span class="p">(</span><span class="n">modelType</span><span class="o">=</span><span class="s1">&#39;SVD&#39;</span><span class="p">,</span> <span class="n">printStatus</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre><span class="ansi-bold">
-Building SVD model</span>
-<span class="ansi-green-intense-fg">Done. Time: 46.70339979999994s</span>
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">algo</span><span class="o">.</span><span class="n">SVD</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">SVD_model</span><span class="p">,</span> <span class="n">sample</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">buildTable</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printStatus</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Getting similar movies for user 0... <span class="ansi-blue-intense-fg ansi-bold">Total Time: 0.0197233999999753s</span>
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>title</th>
-      <th>year</th>
-      <th>popularity</th>
-      <th>rating#</th>
-      <th>ratingMean</th>
-      <th>genres</th>
-      <th>similarity</th>
-      <th>rating</th>
-    </tr>
-    <tr>
-      <th>movieId</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>89780</th>
-      <td>Sherlock Holmes</td>
-      <td>2010</td>
-      <td>8622</td>
-      <td>144</td>
-      <td>3.322917</td>
-      <td>Mystery|Sci-Fi</td>
-      <td>0.122870</td>
-      <td>3.560370</td>
-    </tr>
-    <tr>
-      <th>100450</th>
-      <td>Battlestar Galactica: Blood &amp; Chrome</td>
-      <td>2012</td>
-      <td>9235</td>
-      <td>119</td>
-      <td>3.378151</td>
-      <td>Sci-Fi</td>
-      <td>0.105474</td>
-      <td>3.542974</td>
-    </tr>
-    <tr>
-      <th>44889</th>
-      <td>Reefer Madness: The Movie Musical</td>
-      <td>2005</td>
-      <td>9033</td>
-      <td>126</td>
-      <td>3.460317</td>
-      <td>Comedy|Drama|Musical</td>
-      <td>0.100225</td>
-      <td>3.537725</td>
-    </tr>
-    <tr>
-      <th>74484</th>
-      <td>Bitch Slap</td>
-      <td>2009</td>
-      <td>10006</td>
-      <td>95</td>
-      <td>2.457895</td>
-      <td>Action|Comedy|Crime|Thriller</td>
-      <td>0.093002</td>
-      <td>3.530502</td>
-    </tr>
-    <tr>
-      <th>79006</th>
-      <td>Empire of Dreams: The Story of the 'Star Wars'...</td>
-      <td>2004</td>
-      <td>9694</td>
-      <td>103</td>
-      <td>3.582524</td>
-      <td>Documentary</td>
-      <td>0.084635</td>
-      <td>3.522135</td>
-    </tr>
-    <tr>
-      <th>27216</th>
-      <td>Katsastus</td>
-      <td>1988</td>
-      <td>9869</td>
-      <td>98</td>
-      <td>3.525510</td>
-      <td>Comedy|Drama</td>
-      <td>0.082103</td>
-      <td>3.519603</td>
-    </tr>
-    <tr>
-      <th>92494</th>
-      <td>Dylan Moran: Monster</td>
-      <td>2004</td>
-      <td>9405</td>
-      <td>112</td>
-      <td>3.812500</td>
-      <td>Comedy|Documentary</td>
-      <td>0.080957</td>
-      <td>3.518457</td>
-    </tr>
-    <tr>
-      <th>51024</th>
-      <td>The Odyssey</td>
-      <td>1997</td>
-      <td>8599</td>
-      <td>145</td>
-      <td>3.386207</td>
-      <td>Adventure|Drama|Fantasy</td>
-      <td>0.075608</td>
-      <td>3.513108</td>
-    </tr>
-    <tr>
-      <th>40697</th>
-      <td>Babylon 5</td>
-      <td>None</td>
-      <td>8186</td>
-      <td>164</td>
-      <td>3.942073</td>
-      <td>Sci-Fi</td>
-      <td>0.069905</td>
-      <td>3.507405</td>
-    </tr>
-    <tr>
-      <th>27450</th>
-      <td>Blueberry</td>
-      <td>2004</td>
-      <td>9403</td>
-      <td>113</td>
-      <td>2.893805</td>
-      <td>Adventure|Western</td>
-      <td>0.068902</td>
-      <td>3.506402</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>While the algorithm is very fast, we see that it also suffers from issues with low rating counts, giving unexpected recommendations due to being unable to draw much conclusion from the limited data. Let's see how it handles a user with more data available.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">algo</span><span class="o">.</span><span class="n">SVD</span><span class="p">(</span><span class="mi">81</span><span class="p">,</span> <span class="n">SVD_model</span><span class="p">,</span> <span class="n">sample</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">buildTable</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printStatus</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Getting similar movies for user 81... <span class="ansi-blue-intense-fg ansi-bold">Total Time: 0.023637599999915437s</span>
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>title</th>
-      <th>year</th>
-      <th>popularity</th>
-      <th>rating#</th>
-      <th>ratingMean</th>
-      <th>genres</th>
-      <th>similarity</th>
-      <th>rating</th>
-    </tr>
-    <tr>
-      <th>movieId</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>48774</th>
-      <td>Children of Men</td>
-      <td>2006</td>
-      <td>322</td>
-      <td>9586</td>
-      <td>3.834707</td>
-      <td>Action|Adventure|Drama|Sci-Fi|Thriller</td>
-      <td>0.859037</td>
-      <td>3.932376</td>
-    </tr>
-    <tr>
-      <th>32587</th>
-      <td>Sin City</td>
-      <td>2005</td>
-      <td>158</td>
-      <td>13797</td>
-      <td>3.757012</td>
-      <td>Action|Crime|Film-Noir|Mystery|Thriller</td>
-      <td>0.813044</td>
-      <td>3.886384</td>
-    </tr>
-    <tr>
-      <th>27728</th>
-      <td>Ghost in the Shell 2: Innocence (a.k.a. Innoce...</td>
-      <td>2004</td>
-      <td>2783</td>
-      <td>1327</td>
-      <td>3.725320</td>
-      <td>Action|Animation|Drama|Sci-Fi|Thriller</td>
-      <td>0.803144</td>
-      <td>3.876483</td>
-    </tr>
-    <tr>
-      <th>27904</th>
-      <td>Scanner Darkly, A</td>
-      <td>2006</td>
-      <td>1215</td>
-      <td>3703</td>
-      <td>3.559546</td>
-      <td>Animation|Drama|Mystery|Sci-Fi|Thriller</td>
-      <td>0.799881</td>
-      <td>3.873220</td>
-    </tr>
-    <tr>
-      <th>27660</th>
-      <td>Animatrix, The</td>
-      <td>2003</td>
-      <td>1343</td>
-      <td>3360</td>
-      <td>3.588542</td>
-      <td>Action|Animation|Drama|Sci-Fi</td>
-      <td>0.793244</td>
-      <td>3.866584</td>
-    </tr>
-    <tr>
-      <th>44191</th>
-      <td>V for Vendetta</td>
-      <td>2006</td>
-      <td>157</td>
-      <td>13799</td>
-      <td>3.823973</td>
-      <td>Action|Sci-Fi|Thriller|IMAX</td>
-      <td>0.755553</td>
-      <td>3.828893</td>
-    </tr>
-    <tr>
-      <th>541</th>
-      <td>Blade Runner</td>
-      <td>1982</td>
-      <td>44</td>
-      <td>20402</td>
-      <td>4.076463</td>
-      <td>Action|Sci-Fi|Thriller</td>
-      <td>0.752953</td>
-      <td>3.826292</td>
-    </tr>
-    <tr>
-      <th>33004</th>
-      <td>Hitchhiker's Guide to the Galaxy, The</td>
-      <td>2005</td>
-      <td>482</td>
-      <td>7636</td>
-      <td>3.366357</td>
-      <td>Adventure|Comedy|Sci-Fi</td>
-      <td>0.752811</td>
-      <td>3.826151</td>
-    </tr>
-    <tr>
-      <th>4370</th>
-      <td>A.I. Artificial Intelligence</td>
-      <td>2001</td>
-      <td>251</td>
-      <td>10887</td>
-      <td>3.225452</td>
-      <td>Adventure|Drama|Sci-Fi</td>
-      <td>0.749790</td>
-      <td>3.823129</td>
-    </tr>
-    <tr>
-      <th>5445</th>
-      <td>Minority Report</td>
-      <td>2002</td>
-      <td>65</td>
-      <td>18232</td>
-      <td>3.655057</td>
-      <td>Action|Crime|Mystery|Sci-Fi|Thriller</td>
-      <td>0.733518</td>
-      <td>3.806858</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Still fast, and the algorithm has better confidence in the recommendations it has given. Still, we won't know how good these are until we test them.</p>
 
 </div>
 </div>

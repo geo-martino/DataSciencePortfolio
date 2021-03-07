@@ -276,9 +276,6 @@ class Algorithms:
                 buildTable=False, printStatus=False):
         Driver function for UserBased algorithms. Gets similar items for given user ID based on UserBased models.
 
-    SVD(userID, model, sample=100, predict='calc', buildTable=False, printStatus=False):
-        Uses SVD to return similarities and predicted ratings for a given user from a similarity matrix.
-
     random(_, __, randomRatings=True):
         Generates random recommendations and ratings.
     """
@@ -777,42 +774,6 @@ class Algorithms:
         if printStatus:
             print('\33[92m', "Done. Average time: ", (perf_counter() - t_predict) / len(similarUsers),
                   "s /similar user", '\33[0m', sep='')
-            print('\33[94;1m', "Total Time: ", (perf_counter() - t_start), "s", '\33[0m', sep='')
-
-        # build data frame of title, year, genres, mean ratings etc. or return similar movies series
-        return self.buildTable(similarMovies, predictedRatings, predict) if buildTable else similarMovies
-
-    def SVD(self, userID, model, sample=100, predict='calc', buildTable=False, printStatus=False):
-        """
-        Uses SVD to return similarities and predicted ratings for a given user from a similarity matrix.
-
-        :param userID: int. User to find similarities for.
-        :param model: object. Similarity matrix.
-        :param sample: int, default=100. Sample of most similar movies to the user to return.
-        :param predict: str, default='calc'. Rating prediction algorithm to use.
-                                        'calc': formulaically calculated value,
-                                        'mean': use mean values from trainData,
-                                        'sims': multiply similarity scores by max possible rating,
-                                        'norm_sims': normalise similarity scores then multiply by max possible rating,
-                                        'rand': randomly generate ratings.
-        :param buildTable: bool, default=False. Return similarities and predicted ratings joined with self.ratingsMean
-        :param printStatus: bool, default=False. Print current progress and time taken at each key stage
-        :return: DataFrame. Full DF containing movieID, title, year, popularity, ratingSize, ratingMean, similarities
-                            and predicted ratings. Returns series of only similarities if buildTables=False.
-        """
-        if userID not in list(model.index):  # check if userID in test data
-            print('\33[91m', "Error: userID ", userID, " not in SVD matrix", '\33[0m', sep='')
-            return
-
-        if printStatus:
-            print("Getting similar movies for user ", userID, "...", sep='', end=' ')
-            t_start = perf_counter()  # start timer
-
-        similarMovies = model.loc[userID].nlargest(sample)  # return similarities from and sample most similar
-        userMean = mean(self.getUserRatings(userID, data=self.testData, drop=True))  # calculate user's mean rating
-        predictedRatings = similarMovies + userMean  # add user's mean to similarities to get predicted ratings
-
-        if printStatus:
             print('\33[94;1m', "Total Time: ", (perf_counter() - t_start), "s", '\33[0m', sep='')
 
         # build data frame of title, year, genres, mean ratings etc. or return similar movies series
